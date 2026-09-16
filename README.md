@@ -143,7 +143,7 @@ deepscan-frontend/src/
 
 ---
 
-  Frontend & UI Design |
+  F|
 | 👤 | **Harshita Nagpal** | Frontend & Documentation |
 | 👤 | **Naman Singh** | Backend & Testing |
 
