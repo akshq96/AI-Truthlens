@@ -144,8 +144,6 @@ deepscan-frontend/src/
 ---
 
 
-d To:** Mr. Sanjay Madaan
-
 ---
 
 <div align="center">
