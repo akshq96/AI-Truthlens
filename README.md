@@ -28,7 +28,7 @@
 |  **AI-image detector** | Community Forensics Vision Transformer (ViT-S/16) for fully AI-generated images |
 |  **Decision engine** | Thresholds measured on validation data; REAL only with positive evidence; UNCERTAIN when evidence is weak |
 | 🔎 **Provenance evidence** | EXIF, XMP, IPTC and ICC metadata; C2PA manifest detection (not cryptographically verified); SynthID adapter (no verifier connected) |
-| 🎬 **Images and videos** | JPG, PNG, WEBP, MP4, MOV, WEBM; videos are checked on 8 evenly sampled frames |
+|  **Images and videos** | JPG, PNG, WEBP, MP4, MOV, WEBM; videos are checked on 8 evenly sampled frames |
 | 🗄️ **History** | Results stored in MongoDB |
 
 ---
