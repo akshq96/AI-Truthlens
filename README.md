@@ -147,7 +147,7 @@ deepscan-frontend/src/
 
 
 
-| 👤 | **Anurag Singh** | Backend & System Analysis |
+ | **Anurag Singh** | Backend & System Analysis |
 | 👤 | **Arpita Raj** | Frontend & UI Design |
 | 👤 | **Harshita Nagpal** | Frontend & Documentation |
 | 👤 | **Naman Singh** | Backend & Testing |
