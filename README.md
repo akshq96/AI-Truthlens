@@ -26,7 +26,7 @@
 |  **Synthetic data augmentation** | Five synthetic face manipulations (blend/warp, frequency perturbation, compression artifacts, colour perturbation, autoencoder swap); the face detector is trained with and without them and compared on unseen manipulations |
 |  **Face-manipulation detector** | Effort CLIP ViT-L/14 backbone (FaceForensics++) with a classification head trained on FF++ and real portraits; dlib 5-point face alignment |
 |  **AI-image detector** | Community Forensics Vision Transformer (ViT-S/16) for fully AI-generated images |
-| ⚖️ **Decision engine** | Thresholds measured on validation data; REAL only with positive evidence; UNCERTAIN when evidence is weak |
+|  **Decision engine** | Thresholds measured on validation data; REAL only with positive evidence; UNCERTAIN when evidence is weak |
 | 🔎 **Provenance evidence** | EXIF, XMP, IPTC and ICC metadata; C2PA manifest detection (not cryptographically verified); SynthID adapter (no verifier connected) |
 | 🎬 **Images and videos** | JPG, PNG, WEBP, MP4, MOV, WEBM; videos are checked on 8 evenly sampled frames |
 | 🗄️ **History** | Results stored in MongoDB |
