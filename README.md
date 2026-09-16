@@ -143,7 +143,6 @@ deepscan-frontend/src/
 
 ---
 
-  Backend & Testing |
 
 **Supervisor:** Mr. Abhishek Singh · **Submitted To:** Mr. Sanjay Madaan
 
