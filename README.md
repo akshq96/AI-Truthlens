@@ -143,7 +143,7 @@ deepscan-frontend/src/
 
 ---
 
-## ✦ Team
+ Team
 
 | | Name | Role |
 |---|---|---|
