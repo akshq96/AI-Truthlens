@@ -145,7 +145,7 @@ deepscan-frontend/src/
 
 
 
-| | Name | Role |
+ Role |
 |---|---|---|
 | 👤 | **Anurag Singh** | Backend & System Analysis |
 | 👤 | **Arpita Raj** | Frontend & UI Design |
