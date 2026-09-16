@@ -1,0 +1,82 @@
+/* ===== Hero Orb — warm fire palette ===== */
+.hero-orb-container {
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  perspective: 1200px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-orb-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
+}
+
+.hero-orb {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 100%, #ffffff 0%, #f59e0b 20%, #e8341a 55%, transparent 88%);
+  box-shadow:
+    0 0 120px rgba(232,52,26,0.45),
+    0 -50px 250px rgba(245,158,11,0.4),
+    inset 0 -30px 100px rgba(255,255,255,0.3);
+  animation: orb-breathe 4s ease-in-out infinite alternate;
+  z-index: 2;
+}
+
+.hero-orb-ring {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 140%; height: 140%;
+  transform: translate(-50%, -50%) rotateX(75deg);
+  border-radius: 50%;
+  border: 3px solid rgba(249,115,22,0.35);
+  box-shadow:
+    0 0 40px rgba(249,115,22,0.5),
+    inset 0 0 20px rgba(249,115,22,0.3);
+  border-left-color: rgba(255,255,255,0.7);
+  border-right-color: rgba(255,255,255,0.7);
+  animation: ring-pulse 4s ease-in-out infinite alternate;
+  z-index: 3;
+}
+
+.hero-orb-beam {
+  position: absolute;
+  bottom: 50%; left: 50%;
+  transform: translateX(-50%);
+  width: 400px; height: 600px;
+  background: linear-gradient(to top, rgba(232,52,26,0.25), transparent);
+  filter: blur(60px);
+  animation: beam-breathe 4s ease-in-out infinite alternate;
+  z-index: 1;
+}
+
+@keyframes orb-breathe {
+  0%   { transform: scale(0.95); opacity: 0.8; }
+  100% { transform: scale(1.05); opacity: 1; }
+}
+
+@keyframes ring-pulse {
+  0%   { box-shadow: 0 0 20px rgba(249,115,22,0.3), inset 0 0 10px rgba(249,115,22,0.2); opacity: 0.65; }
+  100% { box-shadow: 0 0 50px rgba(249,115,22,0.7), inset 0 0 30px rgba(249,115,22,0.5); opacity: 1; }
+}
+
+@keyframes beam-breathe {
+  0%   { opacity: 0.4; height: 400px; }
+  100% { opacity: 0.85; height: 520px; }
+}
+
+/* z-index helpers */
+.landing__left, .landing__right {
+  position: relative;
+  z-index: 10;
+}

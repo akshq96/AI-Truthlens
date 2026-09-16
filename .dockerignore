@@ -1,0 +1,16 @@
+**/node_modules
+**/venv
+**/__pycache__
+**/.git
+**/.vercel
+**/dist
+**/build
+**/.next
+**/.cache
+**/*.log
+**/*.zip
+**/*.tar.gz
+node_modules
+deepscan-frontend/node_modules
+deepscan-backend/node_modules
+deepscan-backend/ml_service/venv

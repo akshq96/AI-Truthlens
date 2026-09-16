@@ -1,0 +1,19 @@
+[dotenv@17.3.1] injecting env (3) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+🚀 Deepfake Server running on http://localhost:5050
+✅ MongoDB Connected
+[0mGET / [32m200[0m 8.405 ms - 81[0m
+File received: e1a561b26198279c6fd51c232c0ac217.jpg
+Running image prediction model for: e1a561b26198279c6fd51c232c0ac217.jpg
+--- EXIF DEBUG INFO ---
+Path: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/uploads/e1a561b26198279c6fd51c232c0ac217.jpg
+Buffer Size: 183501
+Data Found Keys: JFIFVersion, ResolutionUnit, XResolution, YResolution, ThumbnailWidth, ThumbnailHeight, Make, Model, Software, ExposureTime, FNumber, ISO, DateTimeOriginal, FocalLength, LensModel, GPSLatitudeRef, GPSLatitude
+--- RAW EXIF OBJECT ---
+{"JFIFVersion":257,"ResolutionUnit":0,"XResolution":1,"YResolution":1,"ThumbnailWidth":0,"ThumbnailHeight":0,"Make":"Canon","Model":"Canon EOS R5","Software":"Canon DPP 4.0","ExposureTime":0.004,"FNumber":1.8,"ISO":200,"DateTimeOriginal":"2026-03-14T04:52:31.000Z","FocalLength":50,"LensModel":"RF50mm F1.8 STM","GPSLatitudeRef":"N","GPSLatitude":[51,30,0]}
+-----------------------
+-----------------------
+[0mPOST /api/analyze [32m200[0m 302.625 ms - 4265[0m
+Temp file deleted
+
+🛑 SIGTERM received. Shutting down Deepfake gracefully...
+✅ MongoDB connection closed. Exiting.

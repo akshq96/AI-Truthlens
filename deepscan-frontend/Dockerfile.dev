@@ -1,0 +1,22 @@
+# ═══════════════════════════════════════════════════════════════
+# DeepScan Frontend — Development Dockerfile
+# CRA dev server with hot-reload
+# ═══════════════════════════════════════════════════════════════
+
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Copy package files
+COPY package.json package-lock.json ./
+
+# Install all dependencies
+RUN npm install
+
+# Copy source code
+COPY . .
+
+EXPOSE 3000
+
+# CRA dev server
+CMD ["npm", "start"]

@@ -1,0 +1,104 @@
+/Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[ImageModel] Loading face deepfake model ...
+[ImageModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/image_prediction_model/model_v3.pth
+[ImageModel] Input shape: [N, 3, 64, 64]
+[ImageModel] Output shape: [N, 1]
+[ImageModel] Calibration: positive_class=real, deepfake_threshold=0.25, imagenet_norm=True
+[VideoAsImage] Calibration: positive_class=real, deepfake_threshold=0.25, samples=8, decision_threshold=0.25, face_size=440
+[GeneralModel] Loading general AI-image model ...
+[GeneralModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/general_ai_image_model/model_general.pth
+[GeneralModel] Calibration: positive_class=real, deepfake_threshold=0.95
+[HFViT] Loading buildborderless/CommunityForensics-DeepfakeDet-ViT ...
+[HFViT] Loaded successfully. Calibration: deepfake_threshold=0.719
+real=250 fake=250
+  label=0 50/250
+  label=0 100/250
+  label=0 150/250
+  label=0 200/250
+  label=0 250/250
+  label=1 50/250
+  label=1 100/250
+  label=1 150/250
+  label=1 200/250
+  label=1 250/250
+{
+  "n": 500,
+  "n_real": 250,
+  "n_fake": 250,
+  "hf_vit": {
+    "at_deployed_0.719": {
+      "threshold": 0.719,
+      "accuracy": 0.996,
+      "balanced_accuracy": 0.996,
+      "fake_caught_rate": 1.0,
+      "real_kept_rate": 0.992,
+      "tp": 250,
+      "tn": 248,
+      "fp": 2,
+      "fn": 0
+    },
+    "at_0.5": {
+      "threshold": 0.5,
+      "accuracy": 0.992,
+      "balanced_accuracy": 0.992,
+      "fake_caught_rate": 1.0,
+      "real_kept_rate": 0.984,
+      "tp": 250,
+      "tn": 246,
+      "fp": 4,
+      "fn": 0
+    },
+    "best": {
+      "threshold": 0.628,
+      "accuracy": 0.996,
+      "balanced_accuracy": 0.996,
+      "fake_caught_rate": 1.0,
+      "real_kept_rate": 0.992,
+      "tp": 250,
+      "tn": 248,
+      "fp": 2,
+      "fn": 0
+    },
+    "real_mean": 0.0265,
+    "fake_mean": 0.9991
+  },
+  "our_general_cifake": {
+    "at_deployed_0.95": {
+      "threshold": 0.95,
+      "accuracy": 0.5,
+      "balanced_accuracy": 0.5,
+      "fake_caught_rate": 1.0,
+      "real_kept_rate": 0.0,
+      "tp": 250,
+      "tn": 0,
+      "fp": 250,
+      "fn": 0
+    },
+    "at_0.5": {
+      "threshold": 0.5,
+      "accuracy": 0.5,
+      "balanced_accuracy": 0.5,
+      "fake_caught_rate": 1.0,
+      "real_kept_rate": 0.0,
+      "tp": 250,
+      "tn": 0,
+      "fp": 250,
+      "fn": 0
+    },
+    "best": {
+      "threshold": 0.999,
+      "accuracy": 0.512,
+      "balanced_accuracy": 0.512,
+      "fake_caught_rate": 1.0,
+      "real_kept_rate": 0.024,
+      "tp": 250,
+      "tn": 6,
+      "fp": 244,
+      "fn": 0
+    },
+    "real_mean": 0.9997,
+    "fake_mean": 1.0
+  }
+}
+saved realistic_comparison.json

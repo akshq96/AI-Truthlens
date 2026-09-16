@@ -1,0 +1,25 @@
+# ═══════════════════════════════════════════════════════════════
+# DeepScan Backend — Development Dockerfile
+# Includes devDependencies + nodemon for hot-reload
+# ═══════════════════════════════════════════════════════════════
+
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Copy package files
+COPY package.json package-lock.json ./
+
+# Install ALL dependencies (including devDependencies like nodemon)
+RUN npm install
+
+# Copy source code
+COPY . .
+
+# Create uploads directory
+RUN mkdir -p uploads
+
+EXPOSE 5000
+
+# Use nodemon for auto-restart on file changes
+CMD ["npx", "nodemon", "server.js"]

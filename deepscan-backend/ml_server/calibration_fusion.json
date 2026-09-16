@@ -1,0 +1,1318 @@
+{
+ "source": "calibrate_fusion.py (labelled images through the live pipeline)",
+ "tracks": {
+  "deepfake": {
+   "features": {
+    "prop_eye_face_width": {
+     "transform": "linear",
+     "center": 0.44117023696682467,
+     "scale": 0.021519699920328136,
+     "a": 0.13067810782294564,
+     "b": -0.00037134294224711983,
+     "auc": 0.513,
+     "n": 211,
+     "weight": 0.0
+    },
+    "prop_nose_len": {
+     "transform": "linear",
+     "center": 0.6997860710900473,
+     "scale": 0.09490376497146896,
+     "a": -1.0199604415093169,
+     "b": -0.053956578219183995,
+     "auc": 0.7357,
+     "n": 211,
+     "weight": 0.034467
+    },
+    "prop_mouth_width": {
+     "transform": "linear",
+     "center": 0.841404374407583,
+     "scale": 0.07820927535935693,
+     "a": -0.21347852712920323,
+     "b": -0.0013378706857854997,
+     "auc": 0.5438,
+     "n": 211,
+     "weight": 0.0
+    },
+    "prop_face_height": {
+     "transform": "linear",
+     "center": 1.6694997819905213,
+     "scale": 0.20473527741857286,
+     "a": -1.0383085802135983,
+     "b": -0.06376359329494535,
+     "auc": 0.727,
+     "n": 211,
+     "weight": 0.031336
+    },
+    "jaw_symmetry": {
+     "transform": "linear",
+     "center": 0.19925253080568717,
+     "scale": 0.18381259979676276,
+     "a": -0.4707776668044736,
+     "b": -0.01628986458933788,
+     "auc": 0.5624,
+     "n": 211,
+     "weight": 0.000154
+    },
+    "boundary_grad_ratio": {
+     "transform": "linear",
+     "center": 1.4682476919431282,
+     "scale": 0.4604184598611441,
+     "a": 0.03898834046837247,
+     "b": -1.9512622499833885e-05,
+     "auc": 0.5503,
+     "n": 211,
+     "weight": 0.0
+    },
+    "boundary_color_jump": {
+     "transform": "linear",
+     "center": 0.14552543601895734,
+     "scale": 0.09604546717926261,
+     "a": -0.08149660797732886,
+     "b": -0.00015844574416327227,
+     "auc": 0.4987,
+     "n": 211,
+     "weight": 0.0
+    },
+    "hair_boundary_grad_ratio": {
+     "transform": "abs_dev",
+     "center": 1.177691,
+     "scale": 0.3997801258,
+     "a": 0.4346872194125536,
+     "b": -0.5049814836697125,
+     "auc": 0.6525,
+     "n": 211,
+     "weight": 0.010516
+    },
+    "eye_ear_asym": {
+     "transform": "linear",
+     "center": 0.08825514218009477,
+     "scale": 0.0857787261979558,
+     "a": -0.3831245411416933,
+     "b": -0.009707977990461386,
+     "auc": 0.577,
+     "n": 211,
+     "weight": 0.000731
+    },
+    "eye_size_asym": {
+     "transform": "linear",
+     "center": 0.10258184834123223,
+     "scale": 0.10427717127956093,
+     "a": -0.5042991326780066,
+     "b": -0.01830206662636501,
+     "auc": 0.5722,
+     "n": 211,
+     "weight": 0.000492
+    },
+    "iris_color_diff": {
+     "transform": "linear",
+     "center": 0.10110193333333334,
+     "scale": 0.0956796600879982,
+     "a": -0.4692711051020717,
+     "b": -0.018559995118931513,
+     "auc": 0.6196,
+     "n": 210,
+     "weight": 0.004838
+    },
+    "eye_sharpness_asym": {
+     "transform": "linear",
+     "center": 0.3791898516746411,
+     "scale": 0.4201677531964646,
+     "a": -0.09222127794045262,
+     "b": -0.0003420196711312,
+     "auc": 0.5467,
+     "n": 209,
+     "weight": 0.0
+    },
+    "catchlight_offset_diff": {
+     "transform": "linear",
+     "center": 0.34454932367149754,
+     "scale": 0.1975617051048887,
+     "a": 0.12619166622779512,
+     "b": -0.00017115889743447453,
+     "auc": 0.5451,
+     "n": 207,
+     "weight": 0.0
+    },
+    "brow_asym": {
+     "transform": "linear",
+     "center": 0.007975592417061613,
+     "scale": 0.006502240141467614,
+     "a": -0.13409387087732033,
+     "b": -0.0006048802920925668,
+     "auc": 0.4995,
+     "n": 211,
+     "weight": 0.0
+    },
+    "nose_midline_dev": {
+     "transform": "linear",
+     "center": 0.10190177725118484,
+     "scale": 0.1121356613724631,
+     "a": -0.5542005324871883,
+     "b": -0.02547373733617638,
+     "auc": 0.5711,
+     "n": 211,
+     "weight": 0.000443
+    },
+    "mouth_corner_asym": {
+     "transform": "linear",
+     "center": 0.05951182938388626,
+     "scale": 0.05981407192685573,
+     "a": -0.09880518542438944,
+     "b": -0.000315733291730198,
+     "auc": 0.4984,
+     "n": 211,
+     "weight": 0.0
+    },
+    "lip_sharpness_rel": {
+     "transform": "linear",
+     "center": 1.9363593933649288,
+     "scale": 1.218451284849679,
+     "a": 0.5378960420082144,
+     "b": -0.012451622184518773,
+     "auc": 0.6562,
+     "n": 211,
+     "weight": 0.011285
+    },
+    "teeth_detail": {
+     "transform": "abs_dev",
+     "center": 1.93242,
+     "scale": 0.8946171495999998,
+     "a": 0.6172626493762943,
+     "b": -0.837236758264343,
+     "auc": 0.669,
+     "n": 64,
+     "weight": 0.014153
+    },
+    "skin_hf_energy": {
+     "transform": "linear",
+     "center": 5.809530398104265,
+     "scale": 1.0875568098102997,
+     "a": -0.910814084446136,
+     "b": -0.051116516257044345,
+     "auc": 0.7152,
+     "n": 211,
+     "weight": 0.027303
+    },
+    "skin_noise": {
+     "transform": "linear",
+     "center": -0.11111990995260662,
+     "scale": 0.45555301043001734,
+     "a": -1.1377584216316008,
+     "b": -0.12339526575769018,
+     "auc": 0.7113,
+     "n": 211,
+     "weight": 0.026011
+    },
+    "skin_fft_hf": {
+     "transform": "linear",
+     "center": 0.01883726066350711,
+     "scale": 0.03742443924439263,
+     "a": -1.4049063044018473,
+     "b": -0.17729273677277227,
+     "auc": 0.5997,
+     "n": 211,
+     "weight": 0.00247
+    },
+    "face_bg_sharpness_ratio": {
+     "transform": "linear",
+     "center": -0.20034331904761904,
+     "scale": 0.9299718438147411,
+     "a": 0.11929280733392011,
+     "b": -0.0001903225945792998,
+     "auc": 0.532,
+     "n": 210,
+     "weight": 0.0
+    },
+    "face_bg_noise_ratio": {
+     "transform": "linear",
+     "center": -0.19453561904761907,
+     "scale": 0.5194301970515576,
+     "a": -0.21665662994614635,
+     "b": -0.0006673954281991207,
+     "auc": 0.5573,
+     "n": 210,
+     "weight": 5.3e-05
+    },
+    "bg_noise_cv": {
+     "transform": "linear",
+     "center": 0.7979880147783253,
+     "scale": 0.28059544525395375,
+     "a": -0.330977883685646,
+     "b": -0.002516953665869727,
+     "auc": 0.5769,
+     "n": 203,
+     "weight": 0.000722
+    },
+    "bg_texture_entropy_cv": {
+     "transform": "linear",
+     "center": 0.4120272610837439,
+     "scale": 0.23845455095113807,
+     "a": -0.05530369070220391,
+     "b": -8.200718307893674e-05,
+     "auc": 0.482,
+     "n": 203,
+     "weight": 0.0
+    },
+    "bg_sharpness_cv": {
+     "transform": "linear",
+     "center": 1.5808865714285716,
+     "scale": 0.5254578532175985,
+     "a": -0.15065546996876636,
+     "b": -6.277141132315361e-05,
+     "auc": 0.5402,
+     "n": 203,
+     "weight": 0.0
+    },
+    "edge_density": {
+     "transform": "linear",
+     "center": 0.0666911135371179,
+     "scale": 0.035313011406871896,
+     "a": -0.22766330506683713,
+     "b": -0.0042191083185817305,
+     "auc": 0.5586,
+     "n": 229,
+     "weight": 7.4e-05
+    },
+    "edge_contrast": {
+     "transform": "linear",
+     "center": 4.360789663755458,
+     "scale": 1.706472263359381,
+     "a": -0.40529885343698235,
+     "b": -0.017697734253509574,
+     "auc": 0.5452,
+     "n": 229,
+     "weight": 0.0
+    },
+    "face_bg_light_diff": {
+     "transform": "linear",
+     "center": 0.1074047619047619,
+     "scale": 0.11623930793555255,
+     "a": -0.6912581235315337,
+     "b": -0.040864832146572036,
+     "auc": 0.6418,
+     "n": 210,
+     "weight": 0.008426
+    },
+    "illumination_cv": {
+     "transform": "linear",
+     "center": 0.45764938423645324,
+     "scale": 0.19714465587994884,
+     "a": 0.20786068058012022,
+     "b": 0.000591476773376852,
+     "auc": 0.5607,
+     "n": 203,
+     "weight": 0.000114
+    },
+    "saturation_cv": {
+     "transform": "linear",
+     "center": 0.4765608866995074,
+     "scale": 0.23735052569131668,
+     "a": -0.049216323090783935,
+     "b": -5.421759208020602e-06,
+     "auc": 0.4821,
+     "n": 203,
+     "weight": 0.0
+    },
+    "fft_hf_ratio": {
+     "transform": "linear",
+     "center": 0.009599545851528382,
+     "scale": 0.013457753313151457,
+     "a": -2.1498750785686584,
+     "b": -0.4673645269555016,
+     "auc": 0.7402,
+     "n": 229,
+     "weight": 0.03616
+    },
+    "fft_radial_peak": {
+     "transform": "linear",
+     "center": 0.12728982096069869,
+     "scale": 0.028007066907389702,
+     "a": -0.06382006092080915,
+     "b": -0.0002398552079711205,
+     "auc": 0.4994,
+     "n": 229,
+     "weight": 0.0
+    },
+    "blockiness": {
+     "transform": "linear",
+     "center": 1.2400695938864625,
+     "scale": 0.12491734145652054,
+     "a": 0.5993589035625965,
+     "b": -0.026000321045593494,
+     "auc": 0.6239,
+     "n": 229,
+     "weight": 0.005461
+    },
+    "blockiness_face_bg_diff": {
+     "transform": "linear",
+     "center": -0.2614582322274881,
+     "scale": 0.15403422468436695,
+     "a": -0.48052745224733545,
+     "b": -0.005136783738225365,
+     "auc": 0.6313,
+     "n": 211,
+     "weight": 0.006613
+    },
+    "channel_noise_corr": {
+     "transform": "linear",
+     "center": 0.9585347030567687,
+     "scale": 0.048543825213261865,
+     "a": 0.14247541954962467,
+     "b": -0.0019987037001774756,
+     "auc": 0.4487,
+     "n": 229,
+     "weight": 0.0
+    },
+    "residual_kurtosis": {
+     "transform": "linear",
+     "center": 23.582866930131008,
+     "scale": 17.26371888703092,
+     "a": -0.1968598130992547,
+     "b": -0.0040417843468232096,
+     "auc": 0.5843,
+     "n": 229,
+     "weight": 0.001176
+    },
+    "face_head": {
+     "transform": "linear",
+     "center": 0.3275671599459007,
+     "scale": 0.3763440243745198,
+     "a": 2.3777764025537063,
+     "b": 0.2865290495635559,
+     "auc": 0.9357,
+     "n": 229,
+     "weight": 0.148761
+    },
+    "gend": {
+     "transform": "abs_dev",
+     "center": 0.13615092635154724,
+     "scale": 0.05176121353222227,
+     "a": 0.41801799181954086,
+     "b": -1.8573697640772093,
+     "auc": 0.8966,
+     "n": 67,
+     "weight": 0.120141
+    },
+    "xception": {
+     "transform": "linear",
+     "center": 0.2229231533154145,
+     "scale": 0.3201398284954702,
+     "a": 0.8152870187178572,
+     "b": 0.04604391820450317,
+     "auc": 0.6515,
+     "n": 207,
+     "weight": 0.010303
+    }
+   },
+   "groups": {
+    "face": {
+     "members": [
+      "prop_eye_face_width",
+      "prop_nose_len",
+      "prop_mouth_width",
+      "prop_face_height",
+      "jaw_symmetry",
+      "boundary_grad_ratio",
+      "boundary_color_jump",
+      "hair_boundary_grad_ratio"
+     ],
+     "weight": 0.036776,
+     "auc": 0.7418,
+     "n": 211
+    },
+    "eyes": {
+     "members": [
+      "eye_ear_asym",
+      "eye_size_asym",
+      "iris_color_diff",
+      "eye_sharpness_asym",
+      "catchlight_offset_diff",
+      "brow_asym"
+     ],
+     "weight": 0.007755,
+     "auc": 0.6381,
+     "n": 211
+    },
+    "nose_mouth": {
+     "members": [
+      "nose_midline_dev",
+      "mouth_corner_asym",
+      "lip_sharpness_rel",
+      "teeth_detail"
+     ],
+     "weight": 0.024665,
+     "auc": 0.7071,
+     "n": 211
+    },
+    "skin_texture": {
+     "members": [
+      "skin_hf_energy",
+      "skin_noise",
+      "skin_fft_hf",
+      "face_bg_sharpness_ratio",
+      "face_bg_noise_ratio"
+     ],
+     "weight": 0.029146,
+     "auc": 0.7207,
+     "n": 211
+    },
+    "background": {
+     "members": [
+      "bg_noise_cv",
+      "bg_texture_entropy_cv",
+      "bg_sharpness_cv",
+      "edge_density",
+      "edge_contrast"
+     ],
+     "weight": 0.001398,
+     "auc": 0.5874,
+     "n": 229
+    },
+    "lighting": {
+     "members": [
+      "face_bg_light_diff",
+      "illumination_cv",
+      "saturation_cv"
+     ],
+     "weight": 0.012318,
+     "auc": 0.661,
+     "n": 228
+    },
+    "frequency": {
+     "members": [
+      "fft_hf_ratio",
+      "fft_radial_peak",
+      "blockiness",
+      "blockiness_face_bg_diff",
+      "channel_noise_corr",
+      "residual_kurtosis"
+     ],
+     "weight": 0.032139,
+     "auc": 0.7293,
+     "n": 229
+    },
+    "ml": {
+     "members": [
+      "face_head",
+      "gend",
+      "xception"
+     ],
+     "weight": 0.148226,
+     "auc": 0.935,
+     "n": 229
+    }
+   }
+  },
+  "ai": {
+   "features": {
+    "prop_eye_face_width": {
+     "transform": "linear",
+     "center": 0.43917595098039214,
+     "scale": 0.02476205892446298,
+     "a": -0.05749011450444254,
+     "b": -0.00010034993272380643,
+     "auc": 0.5123,
+     "n": 204,
+     "weight": 0.0
+    },
+    "prop_nose_len": {
+     "transform": "linear",
+     "center": 0.7699299901960784,
+     "scale": 0.09266840838215479,
+     "a": 0.9342449113137021,
+     "b": -0.02506248836480525,
+     "auc": 0.7273,
+     "n": 204,
+     "weight": 0.031429
+    },
+    "prop_mouth_width": {
+     "transform": "abs_dev",
+     "center": 0.842773,
+     "scale": 0.07860004000000005,
+     "a": 0.568616952006319,
+     "b": -0.6414207190259407,
+     "auc": 0.6413,
+     "n": 204,
+     "weight": 0.008342
+    },
+    "prop_face_height": {
+     "transform": "linear",
+     "center": 1.8043938480392157,
+     "scale": 0.21764707254899734,
+     "a": 0.6283224526055748,
+     "b": -0.00463365928997778,
+     "auc": 0.678,
+     "n": 204,
+     "weight": 0.016392
+    },
+    "jaw_symmetry": {
+     "transform": "linear",
+     "center": 0.24510980392156864,
+     "scale": 0.23120293111608975,
+     "a": 0.08317671506331453,
+     "b": -0.00015997137771390376,
+     "auc": 0.525,
+     "n": 204,
+     "weight": 0.0
+    },
+    "boundary_grad_ratio": {
+     "transform": "linear",
+     "center": 1.4824676372549022,
+     "scale": 0.46997426186831753,
+     "a": 0.10650323592737315,
+     "b": -0.00026343290844856265,
+     "auc": 0.5628,
+     "n": 204,
+     "weight": 0.000164
+    },
+    "boundary_color_jump": {
+     "transform": "linear",
+     "center": 0.15675403921568629,
+     "scale": 0.10838490432338738,
+     "a": 0.1486842753600052,
+     "b": -0.0005527559874873799,
+     "auc": 0.5425,
+     "n": 204,
+     "weight": 0.0
+    },
+    "hair_boundary_grad_ratio": {
+     "transform": "linear",
+     "center": 1.204564549019608,
+     "scale": 0.4553691471758839,
+     "a": -0.23411595387849166,
+     "b": -0.00284953364955776,
+     "auc": 0.5324,
+     "n": 204,
+     "weight": 0.0
+    },
+    "eye_ear_asym": {
+     "transform": "linear",
+     "center": 0.1060749656862745,
+     "scale": 0.09939486049782292,
+     "a": 0.07022748345410211,
+     "b": -0.0001178053435801738,
+     "auc": 0.5386,
+     "n": 204,
+     "weight": 0.0
+    },
+    "eye_size_asym": {
+     "transform": "linear",
+     "center": 0.11390472058823528,
+     "scale": 0.11752580000990687,
+     "a": -0.21108822037460803,
+     "b": -0.002657280954576788,
+     "auc": 0.5303,
+     "n": 204,
+     "weight": 0.0
+    },
+    "iris_color_diff": {
+     "transform": "abs_dev",
+     "center": 0.08996950000000001,
+     "scale": 0.06722405020000001,
+     "a": 0.19458236226145206,
+     "b": -0.24927566204224277,
+     "auc": 0.5926,
+     "n": 203,
+     "weight": 0.001814
+    },
+    "eye_sharpness_asym": {
+     "transform": "linear",
+     "center": 0.40862697,
+     "scale": 0.4766115230378533,
+     "a": 0.049338693430587895,
+     "b": -4.245880910669824e-05,
+     "auc": 0.4938,
+     "n": 200,
+     "weight": 0.0
+    },
+    "catchlight_offset_diff": {
+     "transform": "linear",
+     "center": 0.29622269035532994,
+     "scale": 0.20760621800839943,
+     "a": -0.3889727383974453,
+     "b": -0.008184326702454675,
+     "auc": 0.6176,
+     "n": 197,
+     "weight": 0.004565
+    },
+    "brow_asym": {
+     "transform": "abs_dev",
+     "center": 0.006732,
+     "scale": 0.0056590852,
+     "a": 0.23641545362328123,
+     "b": -0.24068818721948645,
+     "auc": 0.5918,
+     "n": 204,
+     "weight": 0.001747
+    },
+    "nose_midline_dev": {
+     "transform": "linear",
+     "center": 0.12815704901960784,
+     "scale": 0.12925991309641938,
+     "a": 0.009458099003425405,
+     "b": -2.9392375274059025e-06,
+     "auc": 0.5393,
+     "n": 204,
+     "weight": 0.0
+    },
+    "mouth_corner_asym": {
+     "transform": "linear",
+     "center": 0.057448122549019605,
+     "scale": 0.061600363570947884,
+     "a": -0.17571168829330072,
+     "b": -0.0018413061934835389,
+     "auc": 0.543,
+     "n": 204,
+     "weight": 0.0
+    },
+    "lip_sharpness_rel": {
+     "transform": "linear",
+     "center": 1.523086480392157,
+     "scale": 1.0655972645446645,
+     "a": -0.2524223862681187,
+     "b": -0.0015851897589082824,
+     "auc": 0.599,
+     "n": 204,
+     "weight": 0.002404
+    },
+    "teeth_detail": {
+     "transform": "linear",
+     "center": 1.7305777567567566,
+     "scale": 1.3228313587783853,
+     "a": -0.3251405720721893,
+     "b": 0.0059006781339767354,
+     "auc": 0.5729,
+     "n": 74,
+     "weight": 0.000524
+    },
+    "skin_hf_energy": {
+     "transform": "linear",
+     "center": 6.712856299019608,
+     "scale": 1.249112187929543,
+     "a": 1.0679440145373977,
+     "b": -0.024491992522540886,
+     "auc": 0.763,
+     "n": 204,
+     "weight": 0.045375
+    },
+    "skin_noise": {
+     "transform": "linear",
+     "center": 0.20482932843137255,
+     "scale": 0.5406396830970007,
+     "a": 0.6623181557612405,
+     "b": 0.0006152626955507197,
+     "auc": 0.7084,
+     "n": 204,
+     "weight": 0.025076
+    },
+    "skin_fft_hf": {
+     "transform": "linear",
+     "center": 0.031509343137254904,
+     "scale": 0.05368132111550238,
+     "a": 0.16411225594698042,
+     "b": 0.0004476171233615831,
+     "auc": 0.5693,
+     "n": 204,
+     "weight": 0.000372
+    },
+    "face_bg_sharpness_ratio": {
+     "transform": "linear",
+     "center": -0.25923746305418716,
+     "scale": 0.9093257492278722,
+     "a": -0.012707285043241635,
+     "b": -5.1282671077272065e-06,
+     "auc": 0.4947,
+     "n": 203,
+     "weight": 0.0
+    },
+    "face_bg_noise_ratio": {
+     "transform": "linear",
+     "center": -0.18594697536945815,
+     "scale": 0.5601366097131903,
+     "a": -0.1737914165224404,
+     "b": -0.000993492009266382,
+     "auc": 0.5525,
+     "n": 203,
+     "weight": 6e-06
+    },
+    "bg_noise_cv": {
+     "transform": "linear",
+     "center": 0.8598897454545454,
+     "scale": 0.36156210372123854,
+     "a": 0.0803746575015985,
+     "b": -0.00021851418228723533,
+     "auc": 0.5099,
+     "n": 440,
+     "weight": 0.0
+    },
+    "bg_texture_entropy_cv": {
+     "transform": "linear",
+     "center": 0.34151777272727274,
+     "scale": 0.22582258841718864,
+     "a": -0.22020401288501437,
+     "b": -0.004254677108265897,
+     "auc": 0.5738,
+     "n": 440,
+     "weight": 0.000566
+    },
+    "bg_sharpness_cv": {
+     "transform": "linear",
+     "center": 1.629815277272727,
+     "scale": 0.7060118124177535,
+     "a": -0.20616333857972827,
+     "b": -0.002202130646155691,
+     "auc": 0.5629,
+     "n": 440,
+     "weight": 0.000166
+    },
+    "edge_density": {
+     "transform": "linear",
+     "center": 0.0957989399141631,
+     "scale": 0.05872481234709378,
+     "a": -0.0067548732507575334,
+     "b": -2.9147142972900574e-06,
+     "auc": 0.4404,
+     "n": 466,
+     "weight": 0.0
+    },
+    "edge_contrast": {
+     "transform": "linear",
+     "center": 4.564787379828326,
+     "scale": 2.7705193676365303,
+     "a": 0.029632565853491364,
+     "b": -4.974552220590491e-05,
+     "auc": 0.5134,
+     "n": 466,
+     "weight": 0.0
+    },
+    "face_bg_light_diff": {
+     "transform": "linear",
+     "center": 0.1481165763546798,
+     "scale": 0.13246170582077987,
+     "a": 0.1736114197383423,
+     "b": -0.00029288369886724947,
+     "auc": 0.581,
+     "n": 203,
+     "weight": 0.000961
+    },
+    "illumination_cv": {
+     "transform": "linear",
+     "center": 0.41554338863636364,
+     "scale": 0.18151776085813306,
+     "a": 0.11692797159560933,
+     "b": -0.00038665266315133026,
+     "auc": 0.5464,
+     "n": 440,
+     "weight": 0.0
+    },
+    "saturation_cv": {
+     "transform": "linear",
+     "center": 0.4707878613636364,
+     "scale": 0.258366034295271,
+     "a": -0.03336667573025606,
+     "b": -4.88274069404713e-05,
+     "auc": 0.4978,
+     "n": 440,
+     "weight": 0.0
+    },
+    "fft_hf_ratio": {
+     "transform": "linear",
+     "center": 0.035676070815450635,
+     "scale": 0.04581802167993743,
+     "a": -0.22491552453646768,
+     "b": -0.005564832609264229,
+     "auc": 0.4656,
+     "n": 466,
+     "weight": 0.0
+    },
+    "fft_radial_peak": {
+     "transform": "linear",
+     "center": 0.12890848497854077,
+     "scale": 0.03160479351233313,
+     "a": -0.03961019532174453,
+     "b": -0.0001116417915177879,
+     "auc": 0.52,
+     "n": 466,
+     "weight": 0.0
+    },
+    "blockiness": {
+     "transform": "linear",
+     "center": 1.0933708154506439,
+     "scale": 0.15570690253192984,
+     "a": -0.4779072805905956,
+     "b": -0.02177804778254384,
+     "auc": 0.6561,
+     "n": 466,
+     "weight": 0.011247
+    },
+    "blockiness_face_bg_diff": {
+     "transform": "linear",
+     "center": -0.18784565686274507,
+     "scale": 0.17132566589243003,
+     "a": 0.5174142416646741,
+     "b": -0.010009085614228842,
+     "auc": 0.6373,
+     "n": 204,
+     "weight": 0.007617
+    },
+    "channel_noise_corr": {
+     "transform": "abs_dev",
+     "center": 0.9677575,
+     "scale": 0.030105676599999985,
+     "a": 0.23986336585906673,
+     "b": -0.43768428683746463,
+     "auc": 0.6553,
+     "n": 466,
+     "weight": 0.011081
+    },
+    "residual_kurtosis": {
+     "transform": "linear",
+     "center": 23.151554433476395,
+     "scale": 23.632765983521963,
+     "a": -0.07890066596850384,
+     "b": -0.000761032295736755,
+     "auc": 0.5503,
+     "n": 466,
+     "weight": 0.0
+    },
+    "cf_vit": {
+     "transform": "linear",
+     "center": 0.367493097837322,
+     "scale": 0.46160572379934683,
+     "a": 2.817300605614945,
+     "b": 0.3712212357292376,
+     "auc": 0.9321,
+     "n": 466,
+     "weight": 0.146014
+    },
+    "modern_probe": {
+     "transform": "linear",
+     "center": 0.4914412214266688,
+     "scale": 0.4393275383975724,
+     "a": 2.4485302672746596,
+     "b": -0.41539990368455165,
+     "auc": 0.9558,
+     "n": 466,
+     "weight": 0.16469
+    }
+   },
+   "groups": {
+    "face": {
+     "members": [
+      "prop_eye_face_width",
+      "prop_nose_len",
+      "prop_mouth_width",
+      "prop_face_height",
+      "jaw_symmetry",
+      "boundary_grad_ratio",
+      "boundary_color_jump",
+      "hair_boundary_grad_ratio"
+     ],
+     "weight": 0.034014,
+     "auc": 0.7344,
+     "n": 204
+    },
+    "eyes": {
+     "members": [
+      "eye_ear_asym",
+      "eye_size_asym",
+      "iris_color_diff",
+      "eye_sharpness_asym",
+      "catchlight_offset_diff",
+      "brow_asym"
+     ],
+     "weight": 0.008466,
+     "auc": 0.642,
+     "n": 204
+    },
+    "nose_mouth": {
+     "members": [
+      "nose_midline_dev",
+      "mouth_corner_asym",
+      "lip_sharpness_rel",
+      "teeth_detail"
+     ],
+     "weight": 0.002129,
+     "auc": 0.5961,
+     "n": 204
+    },
+    "skin_texture": {
+     "members": [
+      "skin_hf_energy",
+      "skin_noise",
+      "skin_fft_hf",
+      "face_bg_sharpness_ratio",
+      "face_bg_noise_ratio"
+     ],
+     "weight": 0.043663,
+     "auc": 0.759,
+     "n": 204
+    },
+    "background": {
+     "members": [
+      "bg_noise_cv",
+      "bg_texture_entropy_cv",
+      "bg_sharpness_cv",
+      "edge_density",
+      "edge_contrast"
+     ],
+     "weight": 0.001057,
+     "auc": 0.5825,
+     "n": 440
+    },
+    "lighting": {
+     "members": [
+      "face_bg_light_diff",
+      "illumination_cv",
+      "saturation_cv"
+     ],
+     "weight": 0.000961,
+     "auc": 0.581,
+     "n": 203
+    },
+    "frequency": {
+     "members": [
+      "fft_hf_ratio",
+      "fft_radial_peak",
+      "blockiness",
+      "blockiness_face_bg_diff",
+      "channel_noise_corr",
+      "residual_kurtosis"
+     ],
+     "weight": 0.017984,
+     "auc": 0.6841,
+     "n": 466
+    },
+    "ml": {
+     "members": [
+      "cf_vit",
+      "modern_probe"
+     ],
+     "weight": 0.183252,
+     "auc": 0.9781,
+     "n": 466
+    }
+   }
+  }
+ },
+ "thresholds": {
+  "face": {
+   "low": 0.279564,
+   "high": 0.838782,
+   "rule": "error-capped band",
+   "val_auc": 0.8952,
+   "n_real": 93,
+   "n_fake": 145
+  },
+  "noface": {
+   "low": 0.490973,
+   "high": 0.548812,
+   "rule": "error-capped band",
+   "val_auc": 0.9763,
+   "n_real": 83,
+   "n_fake": 58
+  }
+ },
+ "stack": {
+  "face": {
+   "coef": {
+    "deepfake:face": 0.00982,
+    "deepfake:eyes": 0.0,
+    "deepfake:nose_mouth": 0.62192,
+    "deepfake:skin_texture": 0.0,
+    "deepfake:background": 0.52065,
+    "deepfake:lighting": 0.00803,
+    "deepfake:frequency": 0.11694,
+    "ai:face": 0.0,
+    "ai:eyes": 0.23879,
+    "ai:nose_mouth": 0.0,
+    "ai:skin_texture": 0.73578,
+    "ai:background": 0.0,
+    "ai:lighting": 0.0,
+    "ai:frequency": 0.37651,
+    "raw:cf_vit": 0.39014,
+    "raw:face_head": 0.51449,
+    "raw:gend": 0.41881,
+    "raw:modern_probe": 0.09226,
+    "raw:xception": 0.09311
+   },
+   "intercept": 4.12591,
+   "n": 338
+  },
+  "noface": {
+   "coef": {
+    "ai:face": 0.0,
+    "ai:eyes": 0.0,
+    "ai:nose_mouth": 0.0,
+    "ai:skin_texture": 0.0,
+    "ai:background": 0.00423,
+    "ai:lighting": 0.0,
+    "ai:frequency": 0.36205,
+    "raw:cf_vit": 0.11793,
+    "raw:modern_probe": 0.55813
+   },
+   "intercept": -0.38191,
+   "n": 230
+  }
+ },
+ "validation": {
+  "val_n": 379,
+  "real_accuracy": 0.7841,
+  "real_to_fake": 0.0398,
+  "real_uncertain": 0.1761,
+  "deepfake_recall_any_fake": 0.5,
+  "deepfake_exact": 0.5,
+  "deepfake_to_real": 0.0735,
+  "deepfake_uncertain": 0.4265,
+  "ai_recall_any_fake": 0.7556,
+  "ai_exact": 0.7556,
+  "ai_to_real": 0.0963,
+  "ai_uncertain": 0.1481,
+  "per_category": {
+   "real_face_hq": {
+    "REAL": 24,
+    "UNCERTAIN": 7,
+    "AI-GENERATED": 1
+   },
+   "real_people_photo": {
+    "REAL": 21,
+    "UNCERTAIN": 3
+   },
+   "real_ff_frame": {
+    "UNCERTAIN": 15,
+    "REAL": 15,
+    "DEEPFAKE": 2
+   },
+   "real_scene": {
+    "REAL": 42,
+    "AI-GENERATED": 3,
+    "UNCERTAIN": 3
+   },
+   "real_openfake": {
+    "REAL": 36,
+    "AI-GENERATED": 1,
+    "UNCERTAIN": 3
+   },
+   "deepfake_ffpp": {
+    "UNCERTAIN": 18,
+    "DEEPFAKE": 25,
+    "REAL": 5
+   },
+   "deepfake_faceshifter": {
+    "UNCERTAIN": 11,
+    "DEEPFAKE": 9
+   },
+   "ai_gan_face": {
+    "AI-GENERATED": 26,
+    "UNCERTAIN": 6
+   },
+   "ai_portrait": {
+    "AI-GENERATED": 15
+   },
+   "ai_scene": {
+    "AI-GENERATED": 40
+   },
+   "ai_openfake": {
+    "UNCERTAIN": 14,
+    "AI-GENERATED": 21,
+    "REAL": 13
+   }
+  }
+ },
+ "weights_summary": {
+  "deepfake": {
+   "face": {
+    "weight": 0.036776,
+    "auc": 0.7418
+   },
+   "eyes": {
+    "weight": 0.007755,
+    "auc": 0.6381
+   },
+   "nose_mouth": {
+    "weight": 0.024665,
+    "auc": 0.7071
+   },
+   "skin_texture": {
+    "weight": 0.029146,
+    "auc": 0.7207
+   },
+   "background": {
+    "weight": 0.001398,
+    "auc": 0.5874
+   },
+   "lighting": {
+    "weight": 0.012318,
+    "auc": 0.661
+   },
+   "frequency": {
+    "weight": 0.032139,
+    "auc": 0.7293
+   },
+   "ml": {
+    "weight": 0.148226,
+    "auc": 0.935
+   }
+  },
+  "ai": {
+   "face": {
+    "weight": 0.034014,
+    "auc": 0.7344
+   },
+   "eyes": {
+    "weight": 0.008466,
+    "auc": 0.642
+   },
+   "nose_mouth": {
+    "weight": 0.002129,
+    "auc": 0.5961
+   },
+   "skin_texture": {
+    "weight": 0.043663,
+    "auc": 0.759
+   },
+   "background": {
+    "weight": 0.001057,
+    "auc": 0.5825
+   },
+   "lighting": {
+    "weight": 0.000961,
+    "auc": 0.581
+   },
+   "frequency": {
+    "weight": 0.017984,
+    "auc": 0.6841
+   },
+   "ml": {
+    "weight": 0.183252,
+    "auc": 0.9781
+   }
+  }
+ },
+ "top_features": {
+  "deepfake": [
+   [
+    "face_head",
+    0.9357,
+    0.148761
+   ],
+   [
+    "gend",
+    0.8966,
+    0.120141
+   ],
+   [
+    "fft_hf_ratio",
+    0.7402,
+    0.03616
+   ],
+   [
+    "prop_nose_len",
+    0.7357,
+    0.034467
+   ],
+   [
+    "prop_face_height",
+    0.727,
+    0.031336
+   ],
+   [
+    "skin_hf_energy",
+    0.7152,
+    0.027303
+   ],
+   [
+    "skin_noise",
+    0.7113,
+    0.026011
+   ],
+   [
+    "teeth_detail",
+    0.669,
+    0.014153
+   ],
+   [
+    "lip_sharpness_rel",
+    0.6562,
+    0.011285
+   ],
+   [
+    "hair_boundary_grad_ratio",
+    0.6525,
+    0.010516
+   ],
+   [
+    "xception",
+    0.6515,
+    0.010303
+   ],
+   [
+    "face_bg_light_diff",
+    0.6418,
+    0.008426
+   ]
+  ],
+  "ai": [
+   [
+    "modern_probe",
+    0.9558,
+    0.16469
+   ],
+   [
+    "cf_vit",
+    0.9321,
+    0.146014
+   ],
+   [
+    "skin_hf_energy",
+    0.763,
+    0.045375
+   ],
+   [
+    "prop_nose_len",
+    0.7273,
+    0.031429
+   ],
+   [
+    "skin_noise",
+    0.7084,
+    0.025076
+   ],
+   [
+    "prop_face_height",
+    0.678,
+    0.016392
+   ],
+   [
+    "blockiness",
+    0.6561,
+    0.011247
+   ],
+   [
+    "channel_noise_corr",
+    0.6553,
+    0.011081
+   ],
+   [
+    "prop_mouth_width",
+    0.6413,
+    0.008342
+   ],
+   [
+    "blockiness_face_bg_diff",
+    0.6373,
+    0.007617
+   ],
+   [
+    "catchlight_offset_diff",
+    0.6176,
+    0.004565
+   ],
+   [
+    "lip_sharpness_rel",
+    0.599,
+    0.002404
+   ]
+  ]
+ }
+}

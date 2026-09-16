@@ -1,0 +1,33 @@
+filename,expected_label,raw_fake_probability,predicted_label,confidence
+test_sets/acceptance/real/photo_people_half_people_146.jpg,real,0.35516,real,0.64484
+test_sets/acceptance/real/photo_people_jpeg40_people_143.jpg,real,0.545512,fake,0.545512
+test_sets/acceptance/real/photo_people_jpeg40_people_92.jpg,real,0.754675,fake,0.754675
+test_sets/acceptance/real/photo_people_people_127.jpg,real,0.281902,real,0.718098
+test_sets/acceptance/real/photo_people_people_138.jpg,real,0.353547,real,0.646453
+test_sets/acceptance/real/photo_people_people_139.jpg,real,0.231233,real,0.768767
+test_sets/acceptance/real/photo_people_people_141.jpg,real,0.666925,fake,0.666925
+test_sets/acceptance/real/photo_people_people_6.jpg,real,0.442454,real,0.557546
+test_sets/acceptance/real/photo_people_people_73.jpg,real,0.306734,real,0.693266
+test_sets/acceptance/real/photo_people_screenshot_people_39.png,real,0.45907,real,0.54093
+test_sets/acceptance/real/portrait_real_18.jpg,real,0.859252,fake,0.859252
+test_sets/acceptance/real/portrait_real_258.jpg,real,0.566047,fake,0.566047
+test_sets/acceptance/real/portrait_real_312.jpg,real,0.242712,real,0.757288
+test_sets/acceptance/real/portrait_real_328.jpg,real,0.454225,real,0.545775
+test_sets/acceptance/real/portrait_real_562.jpg,real,0.479217,real,0.520783
+test_sets/acceptance/real/portrait_real_83.jpg,real,0.684443,fake,0.684443
+test_sets/acceptance/real/user_photo_Screenshot 2026-09-12 at 5.41.38 PM.png,real,0.233058,real,0.766942
+test_sets/acceptance/real/video_frame_873_f2.jpg,real,0.598077,fake,0.598077
+test_sets/acceptance/real/video_frame_885_f1.jpg,real,0.738775,fake,0.738775
+test_sets/acceptance/real/video_frame_891_f3.jpg,real,0.331064,real,0.668936
+test_sets/acceptance/real/video_frame_975_f4.jpg,real,0.475677,real,0.524323
+test_sets/acceptance/user_ai_screenshots/user_Screenshot 2026-09-12 at 6.54.04 PM.png,fake,0.295145,real,0.704855
+test_sets/acceptance/user_ai_screenshots/user_Screenshot 2026-09-12 at 6.54.26 PM.png,fake,0.88091,fake,0.88091
+test_sets/acceptance/user_ai_screenshots/user_Screenshot 2026-09-12 at 6.54.36 PM.png,fake,0.157985,real,0.842015
+test_sets/acceptance/user_ai_screenshots/user_Screenshot 2026-09-12 at 6.54.57 PM.png,fake,0.304882,real,0.695118
+test_sets/acceptance/user_ai_screenshots/user_Screenshot 2026-09-12 at 6.55.25 PM.png,fake,0.315876,real,0.684124
+test_sets/acceptance/user_ai_screenshots/user_Screenshot 2026-09-12 at 7.23.08 PM.png,fake,0.70599,fake,0.70599
+test_sets/acceptance/user_ai_screenshots/user_Screenshot 2026-09-12 at 7.23.23 PM.png,fake,0.894078,fake,0.894078
+test_sets/acceptance/user_ai_screenshots/user_Screenshot 2026-09-12 at 7.23.46 PM.png,fake,0.711717,fake,0.711717
+test_sets/acceptance/user_ai_screenshots/user_Screenshot 2026-09-12 at 7.23.53 PM.png,fake,0.780708,fake,0.780708
+test_sets/acceptance/user_ai_screenshots/user_Screenshot 2026-09-12 at 7.24.02 PM.png,fake,0.780241,fake,0.780241
+test_sets/acceptance/user_ai_screenshots/user_Screenshot 2026-09-12 at 7.24.09 PM.png,fake,0.750681,fake,0.750681

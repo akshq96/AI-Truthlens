@@ -1,0 +1,38 @@
+{
+  "source": "calibrate_decision.py on balanced validation data",
+  "thresholds": {
+    "ai_high": 0.6817,
+    "ai_low": 0.2323,
+    "ai_precision_at_high": 0.9835,
+    "deepfake_high": 0.1562,
+    "deepfake_precision_at_high": 0.7273,
+    "deepfake_low": null
+  },
+  "metrics": {
+    "ai_detector": {
+      "n_real": 180,
+      "n_fake": 180,
+      "ai_high": 0.6817,
+      "recall_at_high": 0.9944,
+      "false_real_rate_at_high": 0.0167,
+      "precision_at_high": 0.9835,
+      "ai_low": 0.2323,
+      "ai_low_can_certify_authenticity": true,
+      "reals_below_low": 0.95,
+      "fakes_leaking_below_low": 0.0
+    },
+    "faceswap_detector": {
+      "n_real": 120,
+      "n_fake": 120,
+      "deepfake_high": 0.1562,
+      "recall_at_high": 0.5333,
+      "false_real_rate_at_high": 0.2,
+      "precision_at_high": 0.7273,
+      "false_real_cap_requested": 0.2,
+      "deepfake_low": null,
+      "deepfake_low_can_certify_authenticity": false,
+      "reals_below_low": 0.1333,
+      "fakes_leaking_below_low": 0.0167
+    }
+  }
+}

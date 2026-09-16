@@ -1,0 +1,48 @@
+{
+  "dataset": {
+    "real_dir": "/Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/calibration_data/rvf10k/valid/real",
+    "fake_dir": "/Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/calibration_data/rvf10k/valid/fake",
+    "real_count": 400,
+    "fake_count": 400,
+    "total_scored": 800
+  },
+  "positive_class": "real",
+  "current_threshold_env": 0.07,
+  "current_threshold_metrics": {
+    "threshold": 0.07,
+    "accuracy": 0.495,
+    "balanced_accuracy": 0.495,
+    "precision": 0.4974160206718346,
+    "recall": 0.9625,
+    "f1": 0.65587734241908,
+    "false_positive_rate_real_flagged_fake": 0.9725,
+    "false_negative_rate_fake_flagged_real": 0.03749999999999998,
+    "tp": 385,
+    "tn": 11,
+    "fp": 389,
+    "fn": 15
+  },
+  "best_threshold": {
+    "threshold": 0.20800000000000002,
+    "accuracy": 0.51375,
+    "balanced_accuracy": 0.51375,
+    "precision": 0.5084485407066052,
+    "recall": 0.8275,
+    "f1": 0.6298763082778306,
+    "false_positive_rate_real_flagged_fake": 0.8,
+    "false_negative_rate_fake_flagged_real": 0.1725,
+    "tp": 331,
+    "tn": 80,
+    "fp": 320,
+    "fn": 69
+  },
+  "recommended_env": {
+    "DEEPSCAN_IMAGE_DEEPFAKE_THRESHOLD": 0.208
+  },
+  "prob_stats": {
+    "real_mean_deepfake_prob": 0.5278591891418819,
+    "real_median_deepfake_prob": 0.5885853797642308,
+    "fake_mean_deepfake_prob": 0.526565299799515,
+    "fake_median_deepfake_prob": 0.5766984070183072
+  }
+}

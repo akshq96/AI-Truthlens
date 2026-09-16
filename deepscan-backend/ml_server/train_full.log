@@ -1,0 +1,18 @@
+Using device: mps
+Train samples: 7000 | Val samples: 3000
+Held-out OOD test samples: 1289
+Epoch 1/10 | train_loss=0.5620 | val_acc=0.7810 val_bal_acc=0.7810 real_kept=0.7267 fake_kept=0.8353 (67.7s)
+Epoch 2/10 | train_loss=0.3652 | val_acc=0.8073 val_bal_acc=0.8073 real_kept=0.7540 fake_kept=0.8607 (63.4s)
+Epoch 3/10 | train_loss=0.2478 | val_acc=0.8177 val_bal_acc=0.8177 real_kept=0.7400 fake_kept=0.8953 (63.1s)
+Epoch 4/10 | train_loss=0.1776 | val_acc=0.8490 val_bal_acc=0.8490 real_kept=0.8287 fake_kept=0.8693 (63.6s)
+Epoch 5/10 | train_loss=0.1289 | val_acc=0.8543 val_bal_acc=0.8543 real_kept=0.8327 fake_kept=0.8760 (63.2s)
+Epoch 6/10 | train_loss=0.1082 | val_acc=0.8677 val_bal_acc=0.8677 real_kept=0.8747 fake_kept=0.8607 (63.3s)
+Epoch 7/10 | train_loss=0.0861 | val_acc=0.8723 val_bal_acc=0.8723 real_kept=0.8693 fake_kept=0.8753 (63.6s)
+Epoch 8/10 | train_loss=0.0754 | val_acc=0.8703 val_bal_acc=0.8703 real_kept=0.8893 fake_kept=0.8513 (188.5s)
+Epoch 9/10 | train_loss=0.0734 | val_acc=0.8653 val_bal_acc=0.8653 real_kept=0.9133 fake_kept=0.8173 (88.9s)
+Epoch 10/10 | train_loss=0.0673 | val_acc=0.8567 val_bal_acc=0.8567 real_kept=0.8113 fake_kept=0.9020 (94.4s)
+Early stopping at epoch 10 (no val improvement for 3 epochs)
+
+Best val balanced_accuracy: 0.8723
+Held-out OOD test metrics: {'accuracy': 0.861132660977502, 'balanced_accuracy': 0.8718736357021586, 'real_kept_real_rate': 0.9966044142614601, 'fake_kept_fake_rate': 0.7471428571428571, 'n': 1289}
+Saved fine-tuned checkpoint to: trained_models/image_prediction_model/model_v3_finetuned.pth

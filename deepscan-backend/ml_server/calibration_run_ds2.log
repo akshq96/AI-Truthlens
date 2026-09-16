@@ -1,0 +1,58 @@
+[ImageModel] Loading image model ...
+[ImageModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/image_prediction_model/model_v3.pth
+[ImageModel] Input shape: [N, 3, 64, 64]
+[ImageModel] Output shape: [N, 1]
+[ImageModel] Calibration: positive_class=real, deepfake_threshold=0.07, imagenet_norm=True
+[VideoAsImage] Calibration: positive_class=real, deepfake_threshold=0.07, samples=8, decision_threshold=0.6, face_size=224
+Scoring 589 real images...
+  ...200/589
+  ...400/589
+Scoring 700 fake images...
+  ...200/700
+  ...400/700
+  ...600/700
+
+Calibration complete
+Total scored: 1289 (real=589, fake=700)
+
+--- CURRENT threshold=0.07 ---
+{
+  "threshold": 0.07,
+  "accuracy": 0.6633048875096974,
+  "balanced_accuracy": 0.6515013339801116,
+  "precision": 0.6587112171837709,
+  "recall": 0.7885714285714286,
+  "f1": 0.717815344603381,
+  "false_positive_rate_real_flagged_fake": 0.48556876061120546,
+  "false_negative_rate_fake_flagged_real": 0.2114285714285714,
+  "tp": 552,
+  "tn": 303,
+  "fp": 286,
+  "fn": 148
+}
+
+--- BEST threshold=0.0600 ---
+{
+  "threshold": 0.06,
+  "accuracy": 0.674166020170675,
+  "balanced_accuracy": 0.6588091195731264,
+  "precision": 0.6569506726457399,
+  "recall": 0.8371428571428572,
+  "f1": 0.7361809045226132,
+  "false_positive_rate_real_flagged_fake": 0.5195246179966044,
+  "false_negative_rate_fake_flagged_real": 0.1628571428571428,
+  "tp": 586,
+  "tn": 283,
+  "fp": 306,
+  "fn": 114
+}
+
+Prob stats:
+{
+  "real_mean_deepfake_prob": 0.2606658096192521,
+  "real_median_deepfake_prob": 0.06520068931762624,
+  "fake_mean_deepfake_prob": 0.35709488722972793,
+  "fake_median_deepfake_prob": 0.17857077328107301
+}
+
+Saved report: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/image_calibration_ds2.json

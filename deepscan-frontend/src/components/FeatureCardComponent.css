@@ -1,0 +1,90 @@
+.feature-card-wrapper {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s cubic-bezier(0.23, 1, 0.32, 1), transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  transition-delay: calc(var(--index) * 0.12s);
+  perspective: 1200px;
+}
+
+.feature-card-wrapper.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature-card-interactive {
+  background: var(--surface) !important;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: var(--r-md);
+  border: 1px solid var(--border) !important;
+  border-left: 3px solid var(--primary) !important;
+  transition: all 0.2s ease-out;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+  box-shadow: var(--shadow-physical) !important;
+  transform-style: preserve-3d;
+}
+
+.feature-card-interactive::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, var(--primary), transparent);
+  opacity: 0.3;
+}
+
+.feature-card-interactive:hover {
+  background: var(--surface2) !important;
+  border-color: var(--primary-light) !important;
+  box-shadow: var(--shadow-card), 0 0 30px var(--primary-dim) !important;
+  transform: translateY(-2px) !important;
+}
+
+.feature-card__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-card__title {
+  color: var(--text);
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+.feature-card__subtitle {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 4px;
+  font-weight: 400;
+}
+
+.feature-card__status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  color: var(--cyan);
+  background: var(--cyan-dim);
+  padding: 4px 10px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--border-cyan);
+}
+
+.feature-card__status .dot {
+  width: 5px;
+  height: 5px;
+  background: var(--cyan);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--cyan);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+

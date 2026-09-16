@@ -1,0 +1,60 @@
+/Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+INFO:     Started server process [53959]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:7070 (Press CTRL+C to quit)
+[ImageModel] Loading face deepfake model ...
+[ImageModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/image_prediction_model/model_v3.pth
+[ImageModel] Input shape: [N, 3, 64, 64]
+[ImageModel] Output shape: [N, 1]
+[ImageModel] Calibration: positive_class=real, deepfake_threshold=0.25, imagenet_norm=True
+[VideoAsImage] Calibration: positive_class=real, deepfake_threshold=0.25, samples=8, decision_threshold=0.25, face_size=440
+[GeneralModel] Loading general AI-image model ...
+[GeneralModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/general_ai_image_model/model_general.pth
+[GeneralModel] Calibration: positive_class=real, deepfake_threshold=0.95
+[FaceSwapModel] Loading face-manipulation model ...
+[FaceSwapModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/faceswap_model/model_faceswap.pth
+[Calibration] thresholds from calibrate_decision.py on balanced validation data: ai_high=0.6817 ai_low=0.2323 deepfake_high=0.1562 deepfake_low=None
+[SynthID] configured=False
+[HFViT] Loading buildborderless/CommunityForensics-DeepfakeDet-ViT ...
+[HFViT] Loaded successfully. Calibration: deepfake_threshold=0.719
+🚀 Image Prediction Server starting on http://localhost:7070
+INFO:     127.0.0.1:56272 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56274 - "GET /health HTTP/1.1" 200 OK
+[Decision] people_0.jpg -> UNCERTAIN (conf=0.5, p_ai=0.0017, p_df=0.0392, face=True, errors=0)
+INFO:     127.0.0.1:56275 - "POST /predict/image HTTP/1.1" 200 OK
+[Decision] people_1.jpg -> UNCERTAIN (conf=0.5, p_ai=0.2751, p_df=0.0254, face=True, errors=0)
+INFO:     127.0.0.1:56276 - "POST /predict/image HTTP/1.1" 200 OK
+[Decision] people_10.jpg -> DEEPFAKE (conf=0.7273, p_ai=0.005, p_df=0.1628, face=True, errors=0)
+INFO:     127.0.0.1:56277 - "POST /predict/image HTTP/1.1" 200 OK
+[Decision] people_100.jpg -> UNCERTAIN (conf=0.5, p_ai=0.0, p_df=0.0703, face=True, errors=0)
+INFO:     127.0.0.1:56278 - "POST /predict/image HTTP/1.1" 200 OK
+[Decision] people_101.jpg -> REAL (conf=0.9992, p_ai=0.0008, p_df=None, face=False, errors=0)
+INFO:     127.0.0.1:56279 - "POST /predict/image HTTP/1.1" 200 OK
+[Decision] Deepfakes_212_179_f3.jpg -> DEEPFAKE (conf=0.962, p_ai=0.0113, p_df=0.962, face=True, errors=0)
+INFO:     127.0.0.1:56280 - "POST /predict/image HTTP/1.1" 200 OK
+[Decision] Deepfakes_212_179_f4.jpg -> UNCERTAIN (conf=0.5, p_ai=0.0061, p_df=0.1378, face=True, errors=0)
+INFO:     127.0.0.1:56281 - "POST /predict/image HTTP/1.1" 200 OK
+[Decision] Deepfakes_213_083_f0.jpg -> UNCERTAIN (conf=0.5, p_ai=0.0037, p_df=0.0302, face=True, errors=0)
+INFO:     127.0.0.1:56282 - "POST /predict/image HTTP/1.1" 200 OK
+[Decision] Deepfakes_213_083_f1.jpg -> UNCERTAIN (conf=0.5, p_ai=0.0083, p_df=0.0745, face=True, errors=0)
+INFO:     127.0.0.1:56283 - "POST /predict/image HTTP/1.1" 200 OK
+[Decision] Deepfakes_213_083_f2.jpg -> DEEPFAKE (conf=0.9195, p_ai=0.0094, p_df=0.9195, face=True, errors=0)
+INFO:     127.0.0.1:56284 - "POST /predict/image HTTP/1.1" 200 OK
+[Decision] image-10.png -> AI-GENERATED (conf=0.99, p_ai=1.0, p_df=0.0968, face=True, errors=0)
+INFO:     127.0.0.1:56285 - "POST /predict/image HTTP/1.1" 200 OK
+[Decision] image-11.png -> AI-GENERATED (conf=0.99, p_ai=1.0, p_df=None, face=False, errors=0)
+INFO:     127.0.0.1:56286 - "POST /predict/image HTTP/1.1" 200 OK
+[Decision] image-12.png -> AI-GENERATED (conf=0.99, p_ai=1.0, p_df=0.5593, face=True, errors=0)
+INFO:     127.0.0.1:56287 - "POST /predict/image HTTP/1.1" 200 OK
+[Decision] image-13.png -> AI-GENERATED (conf=0.99, p_ai=0.9972, p_df=0.0405, face=True, errors=0)
+INFO:     127.0.0.1:56288 - "POST /predict/image HTTP/1.1" 200 OK
+[Decision] image-14.png -> AI-GENERATED (conf=0.99, p_ai=1.0, p_df=0.6259, face=True, errors=0)
+INFO:     127.0.0.1:56289 - "POST /predict/image HTTP/1.1" 200 OK
+[Decision] e1a561b26198279c6fd51c232c0ac217.jpg -> REAL (conf=0.75, p_ai=0.0014, p_df=0.0232, face=True, errors=0)
+INFO:     127.0.0.1:56301 - "POST /predict/image HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [53959]

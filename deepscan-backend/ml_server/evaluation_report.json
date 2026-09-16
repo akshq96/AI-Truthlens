@@ -1,0 +1,371 @@
+{
+  "calibration": {
+    "ai_high": 0.6817,
+    "ai_low": 0.6817,
+    "deepfake_high": 0.9172,
+    "deepfake_low": null,
+    "source": "calibrate_decision.py on balanced validation data",
+    "metrics": {
+      "ai_detector": {
+        "n_real": 180,
+        "n_fake": 180,
+        "ai_high": 0.6817,
+        "recall_at_high": 0.9944,
+        "false_real_rate_at_high": 0.0167,
+        "ai_low": 0.6817,
+        "ai_low_can_certify_authenticity": true,
+        "reals_below_low": 0.9833,
+        "fakes_leaking_below_low": 0.0056
+      },
+      "faceswap_detector": {
+        "n_real": 120,
+        "n_fake": 120,
+        "deepfake_high": 0.9172,
+        "recall_at_high": 0.2083,
+        "false_real_rate_at_high": 0.0167,
+        "deepfake_low": null,
+        "deepfake_low_can_certify_authenticity": false,
+        "reals_below_low": 0.0,
+        "fakes_leaking_below_low": 1.0
+      }
+    }
+  },
+  "overall": {
+    "name": "OVERALL",
+    "n": 650,
+    "n_synthetic": 350,
+    "n_authentic": 300,
+    "accuracy_on_decided": 0.8477,
+    "precision": 0.9772,
+    "recall_synthetic": 0.7343,
+    "f1": 0.8385,
+    "roc_auc": 0.9143,
+    "FALSE_REAL_RATE": 0.2657,
+    "false_synthetic_rate": 0.02,
+    "uncertain_rate": 0.0,
+    "confusion": {
+      "tp_synth": 257,
+      "fp_synth": 6,
+      "tn_real": 294,
+      "fn_called_real": 93,
+      "uncertain": 0
+    }
+  },
+  "per_category": [
+    {
+      "name": "camera_photos_no_face",
+      "n": 75,
+      "n_synthetic": 0,
+      "n_authentic": 75,
+      "accuracy_on_decided": 0.9867,
+      "precision": 0.0,
+      "recall_synthetic": 0.0,
+      "f1": null,
+      "roc_auc": null,
+      "FALSE_REAL_RATE": 0.0,
+      "false_synthetic_rate": 0.0133,
+      "uncertain_rate": 0.0,
+      "confusion": {
+        "tp_synth": 0,
+        "fp_synth": 1,
+        "tn_real": 74,
+        "fn_called_real": 0,
+        "uncertain": 0
+      }
+    },
+    {
+      "name": "camera_photos_faces",
+      "n": 50,
+      "n_synthetic": 0,
+      "n_authentic": 50,
+      "accuracy_on_decided": 1.0,
+      "precision": null,
+      "recall_synthetic": 0.0,
+      "f1": null,
+      "roc_auc": null,
+      "FALSE_REAL_RATE": 0.0,
+      "false_synthetic_rate": 0.0,
+      "uncertain_rate": 0.0,
+      "confusion": {
+        "tp_synth": 0,
+        "fp_synth": 0,
+        "tn_real": 50,
+        "fn_called_real": 0,
+        "uncertain": 0
+      }
+    },
+    {
+      "name": "real_faces_dataset",
+      "n": 50,
+      "n_synthetic": 0,
+      "n_authentic": 50,
+      "accuracy_on_decided": 0.96,
+      "precision": 0.0,
+      "recall_synthetic": 0.0,
+      "f1": null,
+      "roc_auc": null,
+      "FALSE_REAL_RATE": 0.0,
+      "false_synthetic_rate": 0.04,
+      "uncertain_rate": 0.0,
+      "confusion": {
+        "tp_synth": 0,
+        "fp_synth": 2,
+        "tn_real": 48,
+        "fn_called_real": 0,
+        "uncertain": 0
+      }
+    },
+    {
+      "name": "ff_real_faces",
+      "n": 50,
+      "n_synthetic": 0,
+      "n_authentic": 50,
+      "accuracy_on_decided": 0.96,
+      "precision": 0.0,
+      "recall_synthetic": 0.0,
+      "f1": null,
+      "roc_auc": null,
+      "FALSE_REAL_RATE": 0.0,
+      "false_synthetic_rate": 0.04,
+      "uncertain_rate": 0.0,
+      "confusion": {
+        "tp_synth": 0,
+        "fp_synth": 2,
+        "tn_real": 48,
+        "fn_called_real": 0,
+        "uncertain": 0
+      }
+    },
+    {
+      "name": "ai_landscapes_objects",
+      "n": 75,
+      "n_synthetic": 75,
+      "n_authentic": 0,
+      "accuracy_on_decided": 1.0,
+      "precision": 1.0,
+      "recall_synthetic": 1.0,
+      "f1": 1.0,
+      "roc_auc": null,
+      "FALSE_REAL_RATE": 0.0,
+      "false_synthetic_rate": 0.0,
+      "uncertain_rate": 0.0,
+      "confusion": {
+        "tp_synth": 75,
+        "fp_synth": 0,
+        "tn_real": 0,
+        "fn_called_real": 0,
+        "uncertain": 0
+      }
+    },
+    {
+      "name": "ai_portraits",
+      "n": 50,
+      "n_synthetic": 50,
+      "n_authentic": 0,
+      "accuracy_on_decided": 1.0,
+      "precision": 1.0,
+      "recall_synthetic": 1.0,
+      "f1": 1.0,
+      "roc_auc": null,
+      "FALSE_REAL_RATE": 0.0,
+      "false_synthetic_rate": 0.0,
+      "uncertain_rate": 0.0,
+      "confusion": {
+        "tp_synth": 50,
+        "fp_synth": 0,
+        "tn_real": 0,
+        "fn_called_real": 0,
+        "uncertain": 0
+      }
+    },
+    {
+      "name": "gan_faces",
+      "n": 50,
+      "n_synthetic": 50,
+      "n_authentic": 0,
+      "accuracy_on_decided": 0.98,
+      "precision": 1.0,
+      "recall_synthetic": 0.98,
+      "f1": 0.9899,
+      "roc_auc": null,
+      "FALSE_REAL_RATE": 0.02,
+      "false_synthetic_rate": 0.0,
+      "uncertain_rate": 0.0,
+      "confusion": {
+        "tp_synth": 49,
+        "fp_synth": 0,
+        "tn_real": 0,
+        "fn_called_real": 1,
+        "uncertain": 0
+      }
+    },
+    {
+      "name": "face_swaps",
+      "n": 50,
+      "n_synthetic": 50,
+      "n_authentic": 0,
+      "accuracy_on_decided": 0.14,
+      "precision": 1.0,
+      "recall_synthetic": 0.14,
+      "f1": 0.2456,
+      "roc_auc": null,
+      "FALSE_REAL_RATE": 0.86,
+      "false_synthetic_rate": 0.0,
+      "uncertain_rate": 0.0,
+      "confusion": {
+        "tp_synth": 7,
+        "fp_synth": 0,
+        "tn_real": 0,
+        "fn_called_real": 43,
+        "uncertain": 0
+      }
+    },
+    {
+      "name": "unseen_manipulation_faceshifter",
+      "n": 50,
+      "n_synthetic": 50,
+      "n_authentic": 0,
+      "accuracy_on_decided": 0.2,
+      "precision": 1.0,
+      "recall_synthetic": 0.2,
+      "f1": 0.3333,
+      "roc_auc": null,
+      "FALSE_REAL_RATE": 0.8,
+      "false_synthetic_rate": 0.0,
+      "uncertain_rate": 0.0,
+      "confusion": {
+        "tp_synth": 10,
+        "fp_synth": 0,
+        "tn_real": 0,
+        "fn_called_real": 40,
+        "uncertain": 0
+      }
+    },
+    {
+      "name": "jpeg40_ai",
+      "n": 25,
+      "n_synthetic": 25,
+      "n_authentic": 0,
+      "accuracy_on_decided": 0.72,
+      "precision": 1.0,
+      "recall_synthetic": 0.72,
+      "f1": 0.8372,
+      "roc_auc": null,
+      "FALSE_REAL_RATE": 0.28,
+      "false_synthetic_rate": 0.0,
+      "uncertain_rate": 0.0,
+      "confusion": {
+        "tp_synth": 18,
+        "fp_synth": 0,
+        "tn_real": 0,
+        "fn_called_real": 7,
+        "uncertain": 0
+      }
+    },
+    {
+      "name": "jpeg40_real",
+      "n": 25,
+      "n_synthetic": 0,
+      "n_authentic": 25,
+      "accuracy_on_decided": 0.96,
+      "precision": 0.0,
+      "recall_synthetic": 0.0,
+      "f1": null,
+      "roc_auc": null,
+      "FALSE_REAL_RATE": 0.0,
+      "false_synthetic_rate": 0.04,
+      "uncertain_rate": 0.0,
+      "confusion": {
+        "tp_synth": 0,
+        "fp_synth": 1,
+        "tn_real": 24,
+        "fn_called_real": 0,
+        "uncertain": 0
+      }
+    },
+    {
+      "name": "resize50_ai",
+      "n": 25,
+      "n_synthetic": 25,
+      "n_authentic": 0,
+      "accuracy_on_decided": 0.92,
+      "precision": 1.0,
+      "recall_synthetic": 0.92,
+      "f1": 0.9583,
+      "roc_auc": null,
+      "FALSE_REAL_RATE": 0.08,
+      "false_synthetic_rate": 0.0,
+      "uncertain_rate": 0.0,
+      "confusion": {
+        "tp_synth": 23,
+        "fp_synth": 0,
+        "tn_real": 0,
+        "fn_called_real": 2,
+        "uncertain": 0
+      }
+    },
+    {
+      "name": "resize50_real",
+      "n": 25,
+      "n_synthetic": 0,
+      "n_authentic": 25,
+      "accuracy_on_decided": 1.0,
+      "precision": null,
+      "recall_synthetic": 0.0,
+      "f1": null,
+      "roc_auc": null,
+      "FALSE_REAL_RATE": 0.0,
+      "false_synthetic_rate": 0.0,
+      "uncertain_rate": 0.0,
+      "confusion": {
+        "tp_synth": 0,
+        "fp_synth": 0,
+        "tn_real": 25,
+        "fn_called_real": 0,
+        "uncertain": 0
+      }
+    },
+    {
+      "name": "screenshot_ai",
+      "n": 25,
+      "n_synthetic": 25,
+      "n_authentic": 0,
+      "accuracy_on_decided": 1.0,
+      "precision": 1.0,
+      "recall_synthetic": 1.0,
+      "f1": 1.0,
+      "roc_auc": null,
+      "FALSE_REAL_RATE": 0.0,
+      "false_synthetic_rate": 0.0,
+      "uncertain_rate": 0.0,
+      "confusion": {
+        "tp_synth": 25,
+        "fp_synth": 0,
+        "tn_real": 0,
+        "fn_called_real": 0,
+        "uncertain": 0
+      }
+    },
+    {
+      "name": "screenshot_real",
+      "n": 25,
+      "n_synthetic": 0,
+      "n_authentic": 25,
+      "accuracy_on_decided": 1.0,
+      "precision": null,
+      "recall_synthetic": 0.0,
+      "f1": null,
+      "roc_auc": null,
+      "FALSE_REAL_RATE": 0.0,
+      "false_synthetic_rate": 0.0,
+      "uncertain_rate": 0.0,
+      "confusion": {
+        "tp_synth": 0,
+        "fp_synth": 0,
+        "tn_real": 25,
+        "fn_called_real": 0,
+        "uncertain": 0
+      }
+    }
+  ]
+}

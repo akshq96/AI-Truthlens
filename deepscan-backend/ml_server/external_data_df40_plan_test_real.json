@@ -1,0 +1,3 @@
+[
+  {"file": "test-00000-of-00001.parquet", "group": 1, "split": "test", "n_real": 400, "prefixes": ["DF40_CDF_FS"]}
+]

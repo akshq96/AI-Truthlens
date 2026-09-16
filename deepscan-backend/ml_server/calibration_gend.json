@@ -1,0 +1,27 @@
+{
+  "source": "GenD (yermandy/deepfake-detection) on held-out face crops; deepfake_high = model's argmax boundary 0.5",
+  "thresholds": {
+    "deepfake_high": 0.5,
+    "deepfake_low": null,
+    "deepfake_precision_at_high": 0.898
+  },
+  "metrics": {
+    "n_real": 86,
+    "n_fake": 66,
+    "recall_at_high": 0.6667,
+    "false_positive_rate_at_high": 0.0581,
+    "roc_auc": 0.8501,
+    "fakes_below_0.2": 0.2273,
+    "reals_below_0.2": 0.7558,
+    "real_sets": {
+      "ff_real": 40,
+      "real_people_photos": 22,
+      "real_faces_hq": 24
+    },
+    "fake_sets": {
+      "ff_fake": 40,
+      "faceshifter_unseen": 26
+    },
+    "caveat": "GenD was trained on FaceForensics++, so FF++ numbers may be optimistic; FaceShifter and real photos are closer to unseen data. Small samples."
+  }
+}

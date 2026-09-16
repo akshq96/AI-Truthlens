@@ -1,0 +1,22 @@
+# Dependencies (rebuilt inside container)
+node_modules
+
+# Build output (generated inside container)
+build
+
+# Debug logs
+npm-debug.log*
+
+# Local environment overrides
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Version control
+.git
+.gitignore
+
+# Documentation
+README.md
+API_DOCS.md

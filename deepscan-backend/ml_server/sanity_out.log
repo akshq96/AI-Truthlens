@@ -1,0 +1,278 @@
+/Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+LOADED MODELS / THRESHOLDS
+  ai detector      : buildborderless/CommunityForensics-DeepfakeDet-ViT (loaded=True)
+  face-manip ckpt  : model_faceswap.pth (loaded=True)
+  thresholds       : {"ai_high": 0.6817, "ai_low": 0.2323, "deepfake_high": 0.1562, "deepfake_low": null}
+  calibration      : calibrate_decision.py on balanced validation data
+  synthid          : configured=False
+
+======================================================================================================================
+EXPECTED: REAL   (n=5)
+======================================================================================================================
+
+  IMAGE            : people_0.jpg
+  EXPECTED         : REAL
+  AI MODEL         : buildborderless/CommunityForensics-DeepfakeDet-ViT  ran=True
+    raw logits     : [-6.382896423339844]
+    raw prob       : 0.001687368261627853   calibrated: 0.001687368261627853
+    thresholds     : low=0.2323 high=0.6817
+  DF MODEL         : model_faceswap.pth  ran=True
+    raw logits     : [3.198962926864624]
+    raw prob       : 0.9607952237129211   calibrated P(deepfake): 0.03920476835049036
+    thresholds     : low=None high=0.1562  can_certify=False
+  FACE             : True
+  METADATA         : available=True coherence=0.06 (weak)
+  C2PA / SYNTHID   : not_found / unavailable
+  FINAL RESULT     : UNCERTAIN
+  CONFIDENCE       : 0.5
+  LEGACY (frontend): verdict=UNCERTAIN final_score=3.92
+
+  IMAGE            : people_1.jpg
+  EXPECTED         : REAL
+  AI MODEL         : buildborderless/CommunityForensics-DeepfakeDet-ViT  ran=True
+    raw logits     : [-0.9687686562538147]
+    raw prob       : 0.27512601017951965   calibrated: 0.27512601017951965
+    thresholds     : low=0.2323 high=0.6817
+  DF MODEL         : model_faceswap.pth  ran=True
+    raw logits     : [3.6465959548950195]
+    raw prob       : 0.974583089351654   calibrated P(deepfake): 0.025416888303478324
+    thresholds     : low=None high=0.1562  can_certify=False
+  FACE             : True
+  METADATA         : available=True coherence=0.06 (weak)
+  C2PA / SYNTHID   : not_found / unavailable
+  FINAL RESULT     : UNCERTAIN
+  CONFIDENCE       : 0.5
+  LEGACY (frontend): verdict=UNCERTAIN final_score=27.51
+
+  IMAGE            : people_10.jpg
+  EXPECTED         : REAL
+  AI MODEL         : buildborderless/CommunityForensics-DeepfakeDet-ViT  ran=True
+    raw logits     : [-5.296355247497559]
+    raw prob       : 0.004984847269952297   calibrated: 0.004984847269952297
+    thresholds     : low=0.2323 high=0.6817
+  DF MODEL         : model_faceswap.pth  ran=True
+    raw logits     : [1.6373353004455566]
+    raw prob       : 0.8371720314025879   calibrated P(deepfake): 0.16282797489065193
+    thresholds     : low=None high=0.1562  can_certify=False
+  FACE             : True
+  METADATA         : available=True coherence=0.06 (weak)
+  C2PA / SYNTHID   : not_found / unavailable
+  FINAL RESULT     : DEEPFAKE
+  CONFIDENCE       : 0.7273
+  LEGACY (frontend): verdict=SYNTHETIC final_score=72.73
+
+  IMAGE            : people_100.jpg
+  EXPECTED         : REAL
+  AI MODEL         : buildborderless/CommunityForensics-DeepfakeDet-ViT  ran=True
+    raw logits     : [-11.389318466186523]
+    raw prob       : 1.1315582014503889e-05   calibrated: 1.1315582014503889e-05
+    thresholds     : low=0.2323 high=0.6817
+  DF MODEL         : model_faceswap.pth  ran=True
+    raw logits     : [0.9296854734420776]
+    raw prob       : 0.7170114517211914   calibrated P(deepfake): 0.07031452655792236
+    thresholds     : low=None high=0.1562  can_certify=False
+  FACE             : True
+  METADATA         : available=True coherence=0.06 (weak)
+  C2PA / SYNTHID   : not_found / unavailable
+  FINAL RESULT     : UNCERTAIN
+  CONFIDENCE       : 0.5
+  LEGACY (frontend): verdict=UNCERTAIN final_score=7.03
+
+  IMAGE            : people_101.jpg
+  EXPECTED         : REAL
+  AI MODEL         : buildborderless/CommunityForensics-DeepfakeDet-ViT  ran=True
+    raw logits     : [-7.144046783447266]
+    raw prob       : 0.0007889276021160185   calibrated: 0.0007889276021160185
+    thresholds     : low=0.2323 high=0.6817
+  DF MODEL         : None  ran=False  [no face detected — face-manipulation threat model not applicable]
+  FACE             : False
+  METADATA         : available=True coherence=0.06 (weak)
+  C2PA / SYNTHID   : not_found / unavailable
+  FINAL RESULT     : REAL
+  CONFIDENCE       : 0.9992
+  LEGACY (frontend): verdict=REAL final_score=0.08
+
+======================================================================================================================
+EXPECTED: DEEPFAKE   (n=5)
+======================================================================================================================
+
+  IMAGE            : Deepfakes_212_179_f3.jpg
+  EXPECTED         : DEEPFAKE
+  AI MODEL         : buildborderless/CommunityForensics-DeepfakeDet-ViT  ran=True
+    raw logits     : [-4.473929405212402]
+    raw prob       : 0.011273873038589954   calibrated: 0.011273873038589954
+    thresholds     : low=0.2323 high=0.6817
+  DF MODEL         : model_faceswap.pth  ran=True
+    raw logits     : [0.03800215572118759]
+    raw prob       : 0.5094993710517883   calibrated P(deepfake): 0.9619978442788124
+    thresholds     : low=None high=0.1562  can_certify=False
+  FACE             : True
+  METADATA         : available=False coherence=0.0 (none)
+  C2PA / SYNTHID   : not_found / unavailable
+  FINAL RESULT     : DEEPFAKE
+  CONFIDENCE       : 0.962
+  LEGACY (frontend): verdict=SYNTHETIC final_score=96.2
+
+  IMAGE            : Deepfakes_212_179_f4.jpg
+  EXPECTED         : DEEPFAKE
+  AI MODEL         : buildborderless/CommunityForensics-DeepfakeDet-ViT  ran=True
+    raw logits     : [-5.089821815490723]
+    raw prob       : 0.006121414713561535   calibrated: 0.006121414713561535
+    thresholds     : low=0.2323 high=0.6817
+  DF MODEL         : model_faceswap.pth  ran=True
+    raw logits     : [1.8336907625198364]
+    raw prob       : 0.8622008562088013   calibrated P(deepfake): 0.13779918510166078
+    thresholds     : low=None high=0.1562  can_certify=False
+  FACE             : True
+  METADATA         : available=False coherence=0.0 (none)
+  C2PA / SYNTHID   : not_found / unavailable
+  FINAL RESULT     : UNCERTAIN
+  CONFIDENCE       : 0.5
+  LEGACY (frontend): verdict=UNCERTAIN final_score=13.78
+
+  IMAGE            : Deepfakes_213_083_f0.jpg
+  EXPECTED         : DEEPFAKE
+  AI MODEL         : buildborderless/CommunityForensics-DeepfakeDet-ViT  ran=True
+    raw logits     : [-5.600346565246582]
+    raw prob       : 0.0036829679738730192   calibrated: 0.0036829679738730192
+    thresholds     : low=0.2323 high=0.6817
+  DF MODEL         : model_faceswap.pth  ran=True
+    raw logits     : [3.4677395820617676]
+    raw prob       : 0.9697558283805847   calibrated P(deepfake): 0.030244208054092336
+    thresholds     : low=None high=0.1562  can_certify=False
+  FACE             : True
+  METADATA         : available=False coherence=0.0 (none)
+  C2PA / SYNTHID   : not_found / unavailable
+  FINAL RESULT     : UNCERTAIN
+  CONFIDENCE       : 0.5
+  LEGACY (frontend): verdict=UNCERTAIN final_score=3.02
+
+  IMAGE            : Deepfakes_213_083_f1.jpg
+  EXPECTED         : DEEPFAKE
+  AI MODEL         : buildborderless/CommunityForensics-DeepfakeDet-ViT  ran=True
+    raw logits     : [-4.780865669250488]
+    raw prob       : 0.008318948559463024   calibrated: 0.008318948559463024
+    thresholds     : low=0.2323 high=0.6817
+  DF MODEL         : model_faceswap.pth  ran=True
+    raw logits     : [2.5201375484466553]
+    raw prob       : 0.9255415797233582   calibrated P(deepfake): 0.07445846554216684
+    thresholds     : low=None high=0.1562  can_certify=False
+  FACE             : True
+  METADATA         : available=False coherence=0.0 (none)
+  C2PA / SYNTHID   : not_found / unavailable
+  FINAL RESULT     : UNCERTAIN
+  CONFIDENCE       : 0.5
+  LEGACY (frontend): verdict=UNCERTAIN final_score=7.45
+
+  IMAGE            : Deepfakes_213_083_f2.jpg
+  EXPECTED         : DEEPFAKE
+  AI MODEL         : buildborderless/CommunityForensics-DeepfakeDet-ViT  ran=True
+    raw logits     : [-4.657409191131592]
+    raw prob       : 0.00940178707242012   calibrated: 0.00940178707242012
+    thresholds     : low=0.2323 high=0.6817
+  DF MODEL         : model_faceswap.pth  ran=True
+    raw logits     : [0.08050965517759323]
+    raw prob       : 0.5201165080070496   calibrated P(deepfake): 0.9194903448224068
+    thresholds     : low=None high=0.1562  can_certify=False
+  FACE             : True
+  METADATA         : available=False coherence=0.0 (none)
+  C2PA / SYNTHID   : not_found / unavailable
+  FINAL RESULT     : DEEPFAKE
+  CONFIDENCE       : 0.9195
+  LEGACY (frontend): verdict=SYNTHETIC final_score=91.95
+
+======================================================================================================================
+EXPECTED: AI-GENERATED   (n=5)
+======================================================================================================================
+
+  IMAGE            : image-10.png
+  EXPECTED         : AI-GENERATED
+  AI MODEL         : buildborderless/CommunityForensics-DeepfakeDet-ViT  ran=True
+    raw logits     : [13.113744735717773]
+    raw prob       : 0.9999979734420776   calibrated: 0.9999979734420776
+    thresholds     : low=0.2323 high=0.6817
+  DF MODEL         : model_faceswap.pth  ran=True
+    raw logits     : [2.23333477973938]
+    raw prob       : 0.9032033085823059   calibrated P(deepfake): 0.0967966985987958
+    thresholds     : low=None high=0.1562  can_certify=False
+  FACE             : True
+  METADATA         : available=False coherence=0.0 (none)
+  C2PA / SYNTHID   : not_found / unavailable
+  FINAL RESULT     : AI-GENERATED
+  CONFIDENCE       : 0.99
+  LEGACY (frontend): verdict=SYNTHETIC final_score=100.0
+
+  IMAGE            : image-11.png
+  EXPECTED         : AI-GENERATED
+  AI MODEL         : buildborderless/CommunityForensics-DeepfakeDet-ViT  ran=True
+    raw logits     : [13.092757225036621]
+    raw prob       : 0.9999979734420776   calibrated: 0.9999979734420776
+    thresholds     : low=0.2323 high=0.6817
+  DF MODEL         : None  ran=False  [no face detected — face-manipulation threat model not applicable]
+  FACE             : False
+  METADATA         : available=False coherence=0.0 (none)
+  C2PA / SYNTHID   : not_found / unavailable
+  FINAL RESULT     : AI-GENERATED
+  CONFIDENCE       : 0.99
+  LEGACY (frontend): verdict=SYNTHETIC final_score=100.0
+
+  IMAGE            : image-12.png
+  EXPECTED         : AI-GENERATED
+  AI MODEL         : buildborderless/CommunityForensics-DeepfakeDet-ViT  ran=True
+    raw logits     : [13.451833724975586]
+    raw prob       : 0.9999985694885254   calibrated: 0.9999985694885254
+    thresholds     : low=0.2323 high=0.6817
+  DF MODEL         : model_faceswap.pth  ran=True
+    raw logits     : [-0.23832347989082336]
+    raw prob       : 0.4406995177268982   calibrated P(deepfake): 0.5593004559725612
+    thresholds     : low=None high=0.1562  can_certify=False
+  FACE             : True
+  METADATA         : available=False coherence=0.0 (none)
+  C2PA / SYNTHID   : not_found / unavailable
+  FINAL RESULT     : AI-GENERATED
+  CONFIDENCE       : 0.99
+  LEGACY (frontend): verdict=SYNTHETIC final_score=100.0
+
+  IMAGE            : image-13.png
+  EXPECTED         : AI-GENERATED
+  AI MODEL         : buildborderless/CommunityForensics-DeepfakeDet-ViT  ran=True
+    raw logits     : [5.864263534545898]
+    raw prob       : 0.9971689581871033   calibrated: 0.9971689581871033
+    thresholds     : low=0.2323 high=0.6817
+  DF MODEL         : model_faceswap.pth  ran=True
+    raw logits     : [3.1657845973968506]
+    raw prob       : 0.9595261812210083   calibrated P(deepfake): 0.040473806694230285
+    thresholds     : low=None high=0.1562  can_certify=False
+  FACE             : True
+  METADATA         : available=False coherence=0.0 (none)
+  C2PA / SYNTHID   : not_found / unavailable
+  FINAL RESULT     : AI-GENERATED
+  CONFIDENCE       : 0.99
+  LEGACY (frontend): verdict=SYNTHETIC final_score=99.72
+
+  IMAGE            : image-14.png
+  EXPECTED         : AI-GENERATED
+  AI MODEL         : buildborderless/CommunityForensics-DeepfakeDet-ViT  ran=True
+    raw logits     : [14.243295669555664]
+    raw prob       : 0.9999994039535522   calibrated: 0.9999994039535522
+    thresholds     : low=0.2323 high=0.6817
+  DF MODEL         : model_faceswap.pth  ran=True
+    raw logits     : [0.3740685284137726]
+    raw prob       : 0.592441737651825   calibrated P(deepfake): 0.6259314715862274
+    thresholds     : low=None high=0.1562  can_certify=False
+  FACE             : True
+  METADATA         : available=False coherence=0.0 (none)
+  C2PA / SYNTHID   : not_found / unavailable
+  FINAL RESULT     : AI-GENERATED
+  CONFIDENCE       : 0.99
+  LEGACY (frontend): verdict=SYNTHETIC final_score=100.0
+
+======================================================================================================================
+SUMMARY (counts of final result per expected class)
+======================================================================================================================
+  REAL           n= 5  {'DEEPFAKE': 1, 'REAL': 1, 'UNCERTAIN': 3}
+  DEEPFAKE       n= 5  {'DEEPFAKE': 2, 'UNCERTAIN': 3}
+  AI-GENERATED   n= 5  {'AI-GENERATED': 5}
+
+ACCEPTANCE (no fake class majority-REAL): PASS

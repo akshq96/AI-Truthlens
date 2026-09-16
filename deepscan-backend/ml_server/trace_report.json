@@ -1,0 +1,601 @@
+[
+  {
+    "file": "people_0.jpg",
+    "expected": "REAL",
+    "face_detected": true,
+    "face_crop_shape": [
+      671,
+      671,
+      3
+    ],
+    "ai_model": "buildborderless/CommunityForensics-DeepfakeDet-ViT",
+    "ai_raw_logits": [
+      -6.382896423339844
+    ],
+    "ai_sigmoid_of_logit": 0.001687368261627853,
+    "ai_probability_used": 0.001687368261627853,
+    "ai_semantics": "sigmoid(logit) = P(synthetic); positive_class=deepfake",
+    "df_model_checkpoint": "model_faceswap.pth",
+    "df_input_size": 128,
+    "df_positive_class": "real",
+    "df_raw_logits": [
+      3.198962926864624
+    ],
+    "df_sigmoid_of_logit": 0.9607952237129211,
+    "df_positive_probability_fn": 0.9607952316495096,
+    "df_probability_used": 0.03920476835049036,
+    "df_semantics": "positive_class=real; P(deepfake) = 1 - sigmoid(logit)",
+    "metadata_available": true,
+    "metadata_consistency": 0.06,
+    "metadata_reliability": "weak",
+    "c2pa_status": "not_found",
+    "synthid_status": "unavailable",
+    "thresholds": {
+      "ai_high": 0.6817,
+      "ai_low": 0.2323,
+      "deepfake_high": 0.1562,
+      "deepfake_low": null
+    },
+    "final_result": "REAL",
+    "final_confidence": 0.9608,
+    "decision_reason": "Synthetic probability 0.002 <= authenticity threshold 0.232; face-manipulation score 0.039 is below its alarm threshold 0.156 but that detector is not accurate enough to certify authenticity."
+  },
+  {
+    "file": "people_1.jpg",
+    "expected": "REAL",
+    "face_detected": true,
+    "face_crop_shape": [
+      574,
+      574,
+      3
+    ],
+    "ai_model": "buildborderless/CommunityForensics-DeepfakeDet-ViT",
+    "ai_raw_logits": [
+      -0.9687686562538147
+    ],
+    "ai_sigmoid_of_logit": 0.27512601017951965,
+    "ai_probability_used": 0.27512601017951965,
+    "ai_semantics": "sigmoid(logit) = P(synthetic); positive_class=deepfake",
+    "df_model_checkpoint": "model_faceswap.pth",
+    "df_input_size": 128,
+    "df_positive_class": "real",
+    "df_raw_logits": [
+      3.6465959548950195
+    ],
+    "df_sigmoid_of_logit": 0.974583089351654,
+    "df_positive_probability_fn": 0.9745831116965217,
+    "df_probability_used": 0.025416888303478324,
+    "df_semantics": "positive_class=real; P(deepfake) = 1 - sigmoid(logit)",
+    "metadata_available": true,
+    "metadata_consistency": 0.06,
+    "metadata_reliability": "weak",
+    "c2pa_status": "not_found",
+    "synthid_status": "unavailable",
+    "thresholds": {
+      "ai_high": 0.6817,
+      "ai_low": 0.2323,
+      "deepfake_high": 0.1562,
+      "deepfake_low": null
+    },
+    "final_result": "UNCERTAIN",
+    "final_confidence": 0.5,
+    "decision_reason": "Evidence inconclusive: synthetic probability 0.275 falls between 0.232 and 0.682; face-manipulation probability 0.025 alone is not conclusive."
+  },
+  {
+    "file": "people_10.jpg",
+    "expected": "REAL",
+    "face_detected": true,
+    "face_crop_shape": [
+      161,
+      161,
+      3
+    ],
+    "ai_model": "buildborderless/CommunityForensics-DeepfakeDet-ViT",
+    "ai_raw_logits": [
+      -5.296355247497559
+    ],
+    "ai_sigmoid_of_logit": 0.004984847269952297,
+    "ai_probability_used": 0.004984847269952297,
+    "ai_semantics": "sigmoid(logit) = P(synthetic); positive_class=deepfake",
+    "df_model_checkpoint": "model_faceswap.pth",
+    "df_input_size": 128,
+    "df_positive_class": "real",
+    "df_raw_logits": [
+      1.6373353004455566
+    ],
+    "df_sigmoid_of_logit": 0.8371720314025879,
+    "df_positive_probability_fn": 0.8371720251093481,
+    "df_probability_used": 0.16282797489065193,
+    "df_semantics": "positive_class=real; P(deepfake) = 1 - sigmoid(logit)",
+    "metadata_available": true,
+    "metadata_consistency": 0.06,
+    "metadata_reliability": "weak",
+    "c2pa_status": "not_found",
+    "synthid_status": "unavailable",
+    "thresholds": {
+      "ai_high": 0.6817,
+      "ai_low": 0.2323,
+      "deepfake_high": 0.1562,
+      "deepfake_low": null
+    },
+    "final_result": "DEEPFAKE",
+    "final_confidence": 0.7273,
+    "decision_reason": "Face detected and face-manipulation probability 0.163 >= calibrated threshold 0.156 (measured precision at this operating point: 0.73)."
+  },
+  {
+    "file": "people_100.jpg",
+    "expected": "REAL",
+    "face_detected": true,
+    "face_crop_shape": [
+      84,
+      84,
+      3
+    ],
+    "ai_model": "buildborderless/CommunityForensics-DeepfakeDet-ViT",
+    "ai_raw_logits": [
+      -11.389318466186523
+    ],
+    "ai_sigmoid_of_logit": 1.1315582014503889e-05,
+    "ai_probability_used": 1.1315582014503889e-05,
+    "ai_semantics": "sigmoid(logit) = P(synthetic); positive_class=deepfake",
+    "df_model_checkpoint": "model_faceswap.pth",
+    "df_input_size": 128,
+    "df_positive_class": "real",
+    "df_raw_logits": [
+      0.9296854734420776
+    ],
+    "df_sigmoid_of_logit": 0.7170114517211914,
+    "df_positive_probability_fn": 0.9296854734420776,
+    "df_probability_used": 0.07031452655792236,
+    "df_semantics": "positive_class=real; P(deepfake) = 1 - sigmoid(logit)",
+    "metadata_available": true,
+    "metadata_consistency": 0.06,
+    "metadata_reliability": "weak",
+    "c2pa_status": "not_found",
+    "synthid_status": "unavailable",
+    "thresholds": {
+      "ai_high": 0.6817,
+      "ai_low": 0.2323,
+      "deepfake_high": 0.1562,
+      "deepfake_low": null
+    },
+    "final_result": "REAL",
+    "final_confidence": 0.9297,
+    "decision_reason": "Synthetic probability 0.000 <= authenticity threshold 0.232; face-manipulation score 0.070 is below its alarm threshold 0.156 but that detector is not accurate enough to certify authenticity."
+  },
+  {
+    "file": "people_101.jpg",
+    "expected": "REAL",
+    "face_detected": false,
+    "face_crop_shape": null,
+    "ai_model": "buildborderless/CommunityForensics-DeepfakeDet-ViT",
+    "ai_raw_logits": [
+      -7.144046783447266
+    ],
+    "ai_sigmoid_of_logit": 0.0007889276021160185,
+    "ai_probability_used": 0.0007889276021160185,
+    "ai_semantics": "sigmoid(logit) = P(synthetic); positive_class=deepfake",
+    "df_model_checkpoint": "model_faceswap.pth",
+    "df_input_size": 128,
+    "df_positive_class": "real",
+    "df_raw_logits": null,
+    "df_probability_used": null,
+    "df_skip_reason": "no face",
+    "metadata_available": true,
+    "metadata_consistency": 0.06,
+    "metadata_reliability": "weak",
+    "c2pa_status": "not_found",
+    "synthid_status": "unavailable",
+    "thresholds": {
+      "ai_high": 0.6817,
+      "ai_low": 0.2323,
+      "deepfake_high": 0.1562,
+      "deepfake_low": null
+    },
+    "final_result": "REAL",
+    "final_confidence": 0.9992,
+    "decision_reason": "Synthetic probability 0.001 <= authenticity threshold 0.232; no face present, so face-manipulation check not applicable."
+  },
+  {
+    "file": "Deepfakes_212_179_f3.jpg",
+    "expected": "DEEPFAKE",
+    "face_detected": true,
+    "face_crop_shape": [
+      198,
+      198,
+      3
+    ],
+    "ai_model": "buildborderless/CommunityForensics-DeepfakeDet-ViT",
+    "ai_raw_logits": [
+      -4.473929405212402
+    ],
+    "ai_sigmoid_of_logit": 0.011273873038589954,
+    "ai_probability_used": 0.011273873038589954,
+    "ai_semantics": "sigmoid(logit) = P(synthetic); positive_class=deepfake",
+    "df_model_checkpoint": "model_faceswap.pth",
+    "df_input_size": 128,
+    "df_positive_class": "real",
+    "df_raw_logits": [
+      0.03800215572118759
+    ],
+    "df_sigmoid_of_logit": 0.5094993710517883,
+    "df_positive_probability_fn": 0.03800215572118759,
+    "df_probability_used": 0.9619978442788124,
+    "df_semantics": "positive_class=real; P(deepfake) = 1 - sigmoid(logit)",
+    "metadata_available": false,
+    "metadata_consistency": 0.0,
+    "metadata_reliability": "none",
+    "c2pa_status": "not_found",
+    "synthid_status": "unavailable",
+    "thresholds": {
+      "ai_high": 0.6817,
+      "ai_low": 0.2323,
+      "deepfake_high": 0.1562,
+      "deepfake_low": null
+    },
+    "final_result": "DEEPFAKE",
+    "final_confidence": 0.962,
+    "decision_reason": "Face detected and face-manipulation probability 0.962 >= calibrated threshold 0.156 (measured precision at this operating point: 0.73)."
+  },
+  {
+    "file": "Deepfakes_212_179_f4.jpg",
+    "expected": "DEEPFAKE",
+    "face_detected": true,
+    "face_crop_shape": [
+      193,
+      193,
+      3
+    ],
+    "ai_model": "buildborderless/CommunityForensics-DeepfakeDet-ViT",
+    "ai_raw_logits": [
+      -5.089821815490723
+    ],
+    "ai_sigmoid_of_logit": 0.006121414713561535,
+    "ai_probability_used": 0.006121414713561535,
+    "ai_semantics": "sigmoid(logit) = P(synthetic); positive_class=deepfake",
+    "df_model_checkpoint": "model_faceswap.pth",
+    "df_input_size": 128,
+    "df_positive_class": "real",
+    "df_raw_logits": [
+      1.8336907625198364
+    ],
+    "df_sigmoid_of_logit": 0.8622008562088013,
+    "df_positive_probability_fn": 0.8622008148983392,
+    "df_probability_used": 0.13779918510166078,
+    "df_semantics": "positive_class=real; P(deepfake) = 1 - sigmoid(logit)",
+    "metadata_available": false,
+    "metadata_consistency": 0.0,
+    "metadata_reliability": "none",
+    "c2pa_status": "not_found",
+    "synthid_status": "unavailable",
+    "thresholds": {
+      "ai_high": 0.6817,
+      "ai_low": 0.2323,
+      "deepfake_high": 0.1562,
+      "deepfake_low": null
+    },
+    "final_result": "REAL",
+    "final_confidence": 0.8622,
+    "decision_reason": "Synthetic probability 0.006 <= authenticity threshold 0.232; face-manipulation score 0.138 is below its alarm threshold 0.156 but that detector is not accurate enough to certify authenticity. No metadata to corroborate, which is normal for screenshots and social-media images and is not counted against authenticity."
+  },
+  {
+    "file": "Deepfakes_213_083_f0.jpg",
+    "expected": "DEEPFAKE",
+    "face_detected": true,
+    "face_crop_shape": [
+      208,
+      215,
+      3
+    ],
+    "ai_model": "buildborderless/CommunityForensics-DeepfakeDet-ViT",
+    "ai_raw_logits": [
+      -5.600346565246582
+    ],
+    "ai_sigmoid_of_logit": 0.0036829679738730192,
+    "ai_probability_used": 0.0036829679738730192,
+    "ai_semantics": "sigmoid(logit) = P(synthetic); positive_class=deepfake",
+    "df_model_checkpoint": "model_faceswap.pth",
+    "df_input_size": 128,
+    "df_positive_class": "real",
+    "df_raw_logits": [
+      3.4677395820617676
+    ],
+    "df_sigmoid_of_logit": 0.9697558283805847,
+    "df_positive_probability_fn": 0.9697557919459077,
+    "df_probability_used": 0.030244208054092336,
+    "df_semantics": "positive_class=real; P(deepfake) = 1 - sigmoid(logit)",
+    "metadata_available": false,
+    "metadata_consistency": 0.0,
+    "metadata_reliability": "none",
+    "c2pa_status": "not_found",
+    "synthid_status": "unavailable",
+    "thresholds": {
+      "ai_high": 0.6817,
+      "ai_low": 0.2323,
+      "deepfake_high": 0.1562,
+      "deepfake_low": null
+    },
+    "final_result": "REAL",
+    "final_confidence": 0.9698,
+    "decision_reason": "Synthetic probability 0.004 <= authenticity threshold 0.232; face-manipulation score 0.030 is below its alarm threshold 0.156 but that detector is not accurate enough to certify authenticity. No metadata to corroborate, which is normal for screenshots and social-media images and is not counted against authenticity."
+  },
+  {
+    "file": "Deepfakes_213_083_f1.jpg",
+    "expected": "DEEPFAKE",
+    "face_detected": true,
+    "face_crop_shape": [
+      207,
+      209,
+      3
+    ],
+    "ai_model": "buildborderless/CommunityForensics-DeepfakeDet-ViT",
+    "ai_raw_logits": [
+      -4.780865669250488
+    ],
+    "ai_sigmoid_of_logit": 0.008318948559463024,
+    "ai_probability_used": 0.008318948559463024,
+    "ai_semantics": "sigmoid(logit) = P(synthetic); positive_class=deepfake",
+    "df_model_checkpoint": "model_faceswap.pth",
+    "df_input_size": 128,
+    "df_positive_class": "real",
+    "df_raw_logits": [
+      2.5201375484466553
+    ],
+    "df_sigmoid_of_logit": 0.9255415797233582,
+    "df_positive_probability_fn": 0.9255415344578332,
+    "df_probability_used": 0.07445846554216684,
+    "df_semantics": "positive_class=real; P(deepfake) = 1 - sigmoid(logit)",
+    "metadata_available": false,
+    "metadata_consistency": 0.0,
+    "metadata_reliability": "none",
+    "c2pa_status": "not_found",
+    "synthid_status": "unavailable",
+    "thresholds": {
+      "ai_high": 0.6817,
+      "ai_low": 0.2323,
+      "deepfake_high": 0.1562,
+      "deepfake_low": null
+    },
+    "final_result": "REAL",
+    "final_confidence": 0.9255,
+    "decision_reason": "Synthetic probability 0.008 <= authenticity threshold 0.232; face-manipulation score 0.074 is below its alarm threshold 0.156 but that detector is not accurate enough to certify authenticity. No metadata to corroborate, which is normal for screenshots and social-media images and is not counted against authenticity."
+  },
+  {
+    "file": "Deepfakes_213_083_f2.jpg",
+    "expected": "DEEPFAKE",
+    "face_detected": true,
+    "face_crop_shape": [
+      209,
+      213,
+      3
+    ],
+    "ai_model": "buildborderless/CommunityForensics-DeepfakeDet-ViT",
+    "ai_raw_logits": [
+      -4.657409191131592
+    ],
+    "ai_sigmoid_of_logit": 0.00940178707242012,
+    "ai_probability_used": 0.00940178707242012,
+    "ai_semantics": "sigmoid(logit) = P(synthetic); positive_class=deepfake",
+    "df_model_checkpoint": "model_faceswap.pth",
+    "df_input_size": 128,
+    "df_positive_class": "real",
+    "df_raw_logits": [
+      0.08050965517759323
+    ],
+    "df_sigmoid_of_logit": 0.5201165080070496,
+    "df_positive_probability_fn": 0.08050965517759323,
+    "df_probability_used": 0.9194903448224068,
+    "df_semantics": "positive_class=real; P(deepfake) = 1 - sigmoid(logit)",
+    "metadata_available": false,
+    "metadata_consistency": 0.0,
+    "metadata_reliability": "none",
+    "c2pa_status": "not_found",
+    "synthid_status": "unavailable",
+    "thresholds": {
+      "ai_high": 0.6817,
+      "ai_low": 0.2323,
+      "deepfake_high": 0.1562,
+      "deepfake_low": null
+    },
+    "final_result": "DEEPFAKE",
+    "final_confidence": 0.9195,
+    "decision_reason": "Face detected and face-manipulation probability 0.919 >= calibrated threshold 0.156 (measured precision at this operating point: 0.73)."
+  },
+  {
+    "file": "image-10.png",
+    "expected": "AI-GENERATED",
+    "face_detected": true,
+    "face_crop_shape": [
+      145,
+      145,
+      3
+    ],
+    "ai_model": "buildborderless/CommunityForensics-DeepfakeDet-ViT",
+    "ai_raw_logits": [
+      13.113744735717773
+    ],
+    "ai_sigmoid_of_logit": 0.9999979734420776,
+    "ai_probability_used": 0.9999979734420776,
+    "ai_semantics": "sigmoid(logit) = P(synthetic); positive_class=deepfake",
+    "df_model_checkpoint": "model_faceswap.pth",
+    "df_input_size": 128,
+    "df_positive_class": "real",
+    "df_raw_logits": [
+      2.23333477973938
+    ],
+    "df_sigmoid_of_logit": 0.9032033085823059,
+    "df_positive_probability_fn": 0.9032033014012042,
+    "df_probability_used": 0.0967966985987958,
+    "df_semantics": "positive_class=real; P(deepfake) = 1 - sigmoid(logit)",
+    "metadata_available": false,
+    "metadata_consistency": 0.0,
+    "metadata_reliability": "none",
+    "c2pa_status": "not_found",
+    "synthid_status": "unavailable",
+    "thresholds": {
+      "ai_high": 0.6817,
+      "ai_low": 0.2323,
+      "deepfake_high": 0.1562,
+      "deepfake_low": null
+    },
+    "final_result": "AI-GENERATED",
+    "final_confidence": 0.99,
+    "decision_reason": "Synthetic-image probability 1.000 >= calibrated threshold 0.682 (measured precision at this operating point: 0.98)."
+  },
+  {
+    "file": "image-11.png",
+    "expected": "AI-GENERATED",
+    "face_detected": false,
+    "face_crop_shape": null,
+    "ai_model": "buildborderless/CommunityForensics-DeepfakeDet-ViT",
+    "ai_raw_logits": [
+      13.092757225036621
+    ],
+    "ai_sigmoid_of_logit": 0.9999979734420776,
+    "ai_probability_used": 0.9999979734420776,
+    "ai_semantics": "sigmoid(logit) = P(synthetic); positive_class=deepfake",
+    "df_model_checkpoint": "model_faceswap.pth",
+    "df_input_size": 128,
+    "df_positive_class": "real",
+    "df_raw_logits": null,
+    "df_probability_used": null,
+    "df_skip_reason": "no face",
+    "metadata_available": false,
+    "metadata_consistency": 0.0,
+    "metadata_reliability": "none",
+    "c2pa_status": "not_found",
+    "synthid_status": "unavailable",
+    "thresholds": {
+      "ai_high": 0.6817,
+      "ai_low": 0.2323,
+      "deepfake_high": 0.1562,
+      "deepfake_low": null
+    },
+    "final_result": "AI-GENERATED",
+    "final_confidence": 0.99,
+    "decision_reason": "Synthetic-image probability 1.000 >= calibrated threshold 0.682 (measured precision at this operating point: 0.98)."
+  },
+  {
+    "file": "image-12.png",
+    "expected": "AI-GENERATED",
+    "face_detected": true,
+    "face_crop_shape": [
+      203,
+      203,
+      3
+    ],
+    "ai_model": "buildborderless/CommunityForensics-DeepfakeDet-ViT",
+    "ai_raw_logits": [
+      13.451833724975586
+    ],
+    "ai_sigmoid_of_logit": 0.9999985694885254,
+    "ai_probability_used": 0.9999985694885254,
+    "ai_semantics": "sigmoid(logit) = P(synthetic); positive_class=deepfake",
+    "df_model_checkpoint": "model_faceswap.pth",
+    "df_input_size": 128,
+    "df_positive_class": "real",
+    "df_raw_logits": [
+      -0.23832347989082336
+    ],
+    "df_sigmoid_of_logit": 0.4406995177268982,
+    "df_positive_probability_fn": 0.44069954402743877,
+    "df_probability_used": 0.5593004559725612,
+    "df_semantics": "positive_class=real; P(deepfake) = 1 - sigmoid(logit)",
+    "metadata_available": false,
+    "metadata_consistency": 0.0,
+    "metadata_reliability": "none",
+    "c2pa_status": "not_found",
+    "synthid_status": "unavailable",
+    "thresholds": {
+      "ai_high": 0.6817,
+      "ai_low": 0.2323,
+      "deepfake_high": 0.1562,
+      "deepfake_low": null
+    },
+    "final_result": "AI-GENERATED",
+    "final_confidence": 0.99,
+    "decision_reason": "Synthetic-image probability 1.000 >= calibrated threshold 0.682 (measured precision at this operating point: 0.98)."
+  },
+  {
+    "file": "image-13.png",
+    "expected": "AI-GENERATED",
+    "face_detected": true,
+    "face_crop_shape": [
+      281,
+      281,
+      3
+    ],
+    "ai_model": "buildborderless/CommunityForensics-DeepfakeDet-ViT",
+    "ai_raw_logits": [
+      5.864263534545898
+    ],
+    "ai_sigmoid_of_logit": 0.9971689581871033,
+    "ai_probability_used": 0.9971689581871033,
+    "ai_semantics": "sigmoid(logit) = P(synthetic); positive_class=deepfake",
+    "df_model_checkpoint": "model_faceswap.pth",
+    "df_input_size": 128,
+    "df_positive_class": "real",
+    "df_raw_logits": [
+      3.1657845973968506
+    ],
+    "df_sigmoid_of_logit": 0.9595261812210083,
+    "df_positive_probability_fn": 0.9595261933057697,
+    "df_probability_used": 0.040473806694230285,
+    "df_semantics": "positive_class=real; P(deepfake) = 1 - sigmoid(logit)",
+    "metadata_available": false,
+    "metadata_consistency": 0.0,
+    "metadata_reliability": "none",
+    "c2pa_status": "not_found",
+    "synthid_status": "unavailable",
+    "thresholds": {
+      "ai_high": 0.6817,
+      "ai_low": 0.2323,
+      "deepfake_high": 0.1562,
+      "deepfake_low": null
+    },
+    "final_result": "AI-GENERATED",
+    "final_confidence": 0.99,
+    "decision_reason": "Synthetic-image probability 0.997 >= calibrated threshold 0.682 (measured precision at this operating point: 0.98)."
+  },
+  {
+    "file": "image-14.png",
+    "expected": "AI-GENERATED",
+    "face_detected": true,
+    "face_crop_shape": [
+      68,
+      68,
+      3
+    ],
+    "ai_model": "buildborderless/CommunityForensics-DeepfakeDet-ViT",
+    "ai_raw_logits": [
+      14.243295669555664
+    ],
+    "ai_sigmoid_of_logit": 0.9999994039535522,
+    "ai_probability_used": 0.9999994039535522,
+    "ai_semantics": "sigmoid(logit) = P(synthetic); positive_class=deepfake",
+    "df_model_checkpoint": "model_faceswap.pth",
+    "df_input_size": 128,
+    "df_positive_class": "real",
+    "df_raw_logits": [
+      0.3740685284137726
+    ],
+    "df_sigmoid_of_logit": 0.592441737651825,
+    "df_positive_probability_fn": 0.3740685284137726,
+    "df_probability_used": 0.6259314715862274,
+    "df_semantics": "positive_class=real; P(deepfake) = 1 - sigmoid(logit)",
+    "metadata_available": false,
+    "metadata_consistency": 0.0,
+    "metadata_reliability": "none",
+    "c2pa_status": "not_found",
+    "synthid_status": "unavailable",
+    "thresholds": {
+      "ai_high": 0.6817,
+      "ai_low": 0.2323,
+      "deepfake_high": 0.1562,
+      "deepfake_low": null
+    },
+    "final_result": "AI-GENERATED",
+    "final_confidence": 0.99,
+    "decision_reason": "Synthetic-image probability 1.000 >= calibrated threshold 0.682 (measured precision at this operating point: 0.98)."
+  }
+]

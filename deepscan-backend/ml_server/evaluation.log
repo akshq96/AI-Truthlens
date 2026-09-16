@@ -1,0 +1,84 @@
+/Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[ImageModel] Loading face deepfake model ...
+[ImageModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/image_prediction_model/model_v3.pth
+[ImageModel] Input shape: [N, 3, 64, 64]
+[ImageModel] Output shape: [N, 1]
+[ImageModel] Calibration: positive_class=real, deepfake_threshold=0.25, imagenet_norm=True
+[VideoAsImage] Calibration: positive_class=real, deepfake_threshold=0.25, samples=8, decision_threshold=0.25, face_size=440
+[GeneralModel] Loading general AI-image model ...
+[GeneralModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/general_ai_image_model/model_general.pth
+[GeneralModel] Calibration: positive_class=real, deepfake_threshold=0.95
+[FaceSwapModel] Loading face-manipulation model ...
+[FaceSwapModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/faceswap_model/model_faceswap.pth
+[Calibration] thresholds from calibrate_decision.py on balanced validation data: ai_high=0.6817 ai_low=0.6817 deepfake_high=0.9172 deepfake_low=None
+[SynthID] configured=False
+[HFViT] Loading buildborderless/CommunityForensics-DeepfakeDet-ViT ...
+[HFViT] Loaded successfully. Calibration: deepfake_threshold=0.719
+[camera_photos_no_face] n=75
+   40/75
+[camera_photos_faces] n=50
+   40/50
+[real_faces_dataset] n=50
+   40/50
+[ff_real_faces] n=50
+   40/50
+[ai_landscapes_objects] n=75
+   40/75
+[ai_portraits] n=50
+   40/50
+[gan_faces] n=50
+   40/50
+[face_swaps] n=50
+   40/50
+[unseen_manipulation_faceshifter] n=50
+   40/50
+[jpeg40_ai] n=25
+[jpeg40_real] n=25
+[resize50_ai] n=25
+[resize50_real] n=25
+[screenshot_ai] n=25
+[screenshot_real] n=25
+
+================ OVERALL ================
+{
+  "name": "OVERALL",
+  "n": 650,
+  "n_synthetic": 350,
+  "n_authentic": 300,
+  "accuracy_on_decided": 0.8477,
+  "precision": 0.9772,
+  "recall_synthetic": 0.7343,
+  "f1": 0.8385,
+  "roc_auc": 0.9143,
+  "FALSE_REAL_RATE": 0.2657,
+  "false_synthetic_rate": 0.02,
+  "uncertain_rate": 0.0,
+  "confusion": {
+    "tp_synth": 257,
+    "fp_synth": 6,
+    "tn_real": 294,
+    "fn_called_real": 93,
+    "uncertain": 0
+  }
+}
+
+================ PER CATEGORY ================
+category                              n  recall  FALSE-REAL  uncert    auc
+camera_photos_no_face                75   0.000       0.000   0.000    nan
+camera_photos_faces                  50   0.000       0.000   0.000    nan
+real_faces_dataset                   50   0.000       0.000   0.000    nan
+ff_real_faces                        50   0.000       0.000   0.000    nan
+ai_landscapes_objects                75   1.000       0.000   0.000    nan
+ai_portraits                         50   1.000       0.000   0.000    nan
+gan_faces                            50   0.980       0.020   0.000    nan
+face_swaps                           50   0.140       0.860   0.000    nan
+unseen_manipulation_faceshifter      50   0.200       0.800   0.000    nan
+jpeg40_ai                            25   0.720       0.280   0.000    nan
+jpeg40_real                          25   0.000       0.000   0.000    nan
+resize50_ai                          25   0.920       0.080   0.000    nan
+resize50_real                        25   0.000       0.000   0.000    nan
+screenshot_ai                        25   1.000       0.000   0.000    nan
+screenshot_real                      25   0.000       0.000   0.000    nan
+
+wrote evaluation_report.json

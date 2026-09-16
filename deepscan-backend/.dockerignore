@@ -1,0 +1,24 @@
+# Dependencies (rebuilt inside container)
+node_modules
+
+# Environment (injected at runtime, not baked into image)
+.env
+
+# Runtime data
+uploads/*
+!uploads/.gitkeep
+
+# Dev/build artifacts
+npm-debug.log*
+.git
+.gitignore
+
+# Documentation
+README.md
+
+# ML Models (Mounted via volume, prevent huge context transfer)
+trained_models/
+trained_models
+ml_service/venv/
+ml_service/venv
+ml_service/__pycache__/

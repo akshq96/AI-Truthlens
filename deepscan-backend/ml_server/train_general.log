@@ -1,0 +1,14 @@
+Using device: mps
+Train samples: 8000 | Val samples: 1600
+Held-out OOD test samples: 2400
+Epoch 1/8 | train_loss=0.2580 | val_acc=0.9331 val_bal_acc=0.9331 real_kept=0.9075 fake_kept=0.9587 (69.4s)
+Epoch 2/8 | train_loss=0.1246 | val_acc=0.9375 val_bal_acc=0.9375 real_kept=0.9387 fake_kept=0.9363 (69.0s)
+Epoch 3/8 | train_loss=0.0907 | val_acc=0.9456 val_bal_acc=0.9456 real_kept=0.9275 fake_kept=0.9637 (129.7s)
+Epoch 4/8 | train_loss=0.0576 | val_acc=0.9581 val_bal_acc=0.9581 real_kept=0.9537 fake_kept=0.9625 (154.8s)
+Epoch 5/8 | train_loss=0.0559 | val_acc=0.9500 val_bal_acc=0.9500 real_kept=0.9500 fake_kept=0.9500 (81.3s)
+Epoch 6/8 | train_loss=0.0441 | val_acc=0.9481 val_bal_acc=0.9481 real_kept=0.9550 fake_kept=0.9413 (78.9s)
+Early stopping at epoch 6 (no val improvement for 2 epochs)
+
+Best val balanced_accuracy: 0.9581
+Held-out OOD test metrics: {'accuracy': 0.9466666666666667, 'balanced_accuracy': 0.9466666666666667, 'real_kept_real_rate': 0.9425, 'fake_kept_fake_rate': 0.9508333333333333, 'n': 2400}
+Saved fine-tuned checkpoint to: trained_models/general_ai_image_model/model_general.pth

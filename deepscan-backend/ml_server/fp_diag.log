@@ -1,0 +1,60 @@
+/Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[ImageModel] Loading face deepfake model ...
+[ImageModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/image_prediction_model/model_v3.pth
+[ImageModel] Input shape: [N, 3, 64, 64]
+[ImageModel] Output shape: [N, 1]
+[ImageModel] Calibration: positive_class=real, deepfake_threshold=0.25, imagenet_norm=True
+[VideoAsImage] Calibration: positive_class=real, deepfake_threshold=0.25, samples=8, decision_threshold=0.25, face_size=440
+[GeneralModel] Loading general AI-image model ...
+[GeneralModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/general_ai_image_model/model_general.pth
+[GeneralModel] Calibration: positive_class=real, deepfake_threshold=0.95
+[FaceSwapModel] Loading face-manipulation model ...
+[FaceSwapModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/faceswap_model/model_faceswap.pth
+[Calibration] thresholds from calibrate_decision.py on balanced validation data: ai_high=0.6817 ai_low=0.6817 deepfake_high=0.9172 deepfake_low=None
+[SynthID] configured=False
+[HFViT] Loading buildborderless/CommunityForensics-DeepfakeDet-ViT ...
+[HFViT] Loaded successfully. Calibration: deepfake_threshold=0.719
+[camera_nature] n=45
+   camera_nature 40/45
+[camera_city] n=45
+   camera_city 40/45
+[camera_food] n=45
+   camera_food 40/45
+[camera_animals] n=45
+   camera_animals 40/45
+[real_people] n=45
+   real_people 40/45
+[real_faces_hq] n=45
+   real_faces_hq 40/45
+[ff_real_frames] n=45
+   ff_real_frames 40/45
+[real_jpeg60] n=44
+   jpeg60 40/44
+[real_jpeg30] n=44
+   jpeg30 40/44
+[real_resize_small] n=44
+   resize_small 40/44
+[real_screenshot_png] n=44
+   screenshot_png 40/44
+[real_social_media] n=44
+   social_media 40/44
+
+======================================================================================================================
+category                  n    mean     p50     p90     p95     p99     max   >0.1   >0.3   >0.5
+======================================================================================================================
+camera_nature            45   0.027   0.001   0.010   0.057   0.592   0.996   0.02   0.02   0.02
+camera_city              45   0.032   0.001   0.015   0.060   0.633   0.682   0.04   0.04   0.04
+camera_food              45   0.049   0.007   0.193   0.338   0.376   0.386   0.13   0.09   0.00
+camera_animals           45   0.011   0.000   0.019   0.041   0.195   0.269   0.02   0.00   0.00
+real_people              45   0.036   0.003   0.018   0.130   0.633   0.638   0.07   0.04   0.04
+real_faces_hq            45   0.066   0.001   0.109   0.458   0.940   0.999   0.11   0.07   0.07
+ff_real_frames           45   0.010   0.001   0.032   0.056   0.075   0.082   0.00   0.00   0.00
+real_jpeg60              44   0.017   0.001   0.011   0.035   0.340   0.510   0.05   0.02   0.02
+real_jpeg30              44   0.013   0.001   0.002   0.006   0.314   0.534   0.02   0.02   0.02
+real_resize_small        44   0.015   0.001   0.054   0.083   0.133   0.150   0.05   0.00   0.00
+real_screenshot_png      44   0.017   0.002   0.012   0.018   0.339   0.522   0.02   0.02   0.02
+real_social_media        44   0.015   0.001   0.049   0.062   0.191   0.281   0.02   0.00   0.00
+ALL_REAL_POOLED         535   0.026   0.001   0.027   0.098   0.608   0.999   0.05   0.03   0.02
+
+wrote false_positive_diagnosis.json

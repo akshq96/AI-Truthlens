@@ -1,0 +1,465 @@
+{
+ "metrics": {
+  "threshold": 0.5,
+  "n_total": 41,
+  "n_scored": 36,
+  "n_unscored": 5,
+  "unscored_by_class": {
+   "real": 5,
+   "fake": 0
+  },
+  "accuracy": 0.6389,
+  "precision": 0.6667,
+  "recall": 0.7,
+  "f1": 0.6829,
+  "roc_auc": 0.7469,
+  "confusion": {
+   "tn_real_as_real": 9,
+   "fp_real_as_fake": 7,
+   "fn_fake_as_real": 6,
+   "tp_fake_as_fake": 14
+  },
+  "false_positive_rate": 0.4375,
+  "false_negative_rate": 0.3,
+  "detector": "effort_face",
+  "seconds_per_image": 0.401
+ },
+ "rows": [
+  {
+   "filename": "test_sets/acceptance/real/photo_people_half_people_146.jpg",
+   "expected_label": "real",
+   "raw_fake_probability": 0.14907,
+   "predicted_label": "real",
+   "confidence": 0.85093,
+   "raw_output": [
+    1.3572,
+    -0.3848
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/real/photo_people_jpeg40_people_143.jpg",
+   "expected_label": "real",
+   "raw_fake_probability": null,
+   "predicted_label": "no_face",
+   "confidence": null,
+   "raw_output": "no_face"
+  },
+  {
+   "filename": "test_sets/acceptance/real/photo_people_jpeg40_people_92.jpg",
+   "expected_label": "real",
+   "raw_fake_probability": null,
+   "predicted_label": "no_face",
+   "confidence": null,
+   "raw_output": "no_face"
+  },
+  {
+   "filename": "test_sets/acceptance/real/photo_people_people_127.jpg",
+   "expected_label": "real",
+   "raw_fake_probability": null,
+   "predicted_label": "no_face",
+   "confidence": null,
+   "raw_output": "no_face"
+  },
+  {
+   "filename": "test_sets/acceptance/real/photo_people_people_138.jpg",
+   "expected_label": "real",
+   "raw_fake_probability": 0.514763,
+   "predicted_label": "fake",
+   "confidence": 0.514763,
+   "raw_output": [
+    0.3913,
+    0.4504
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/real/photo_people_people_139.jpg",
+   "expected_label": "real",
+   "raw_fake_probability": 0.270584,
+   "predicted_label": "real",
+   "confidence": 0.729416,
+   "raw_output": [
+    1.1242,
+    0.1326
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/real/photo_people_people_141.jpg",
+   "expected_label": "real",
+   "raw_fake_probability": 0.453057,
+   "predicted_label": "real",
+   "confidence": 0.546943,
+   "raw_output": [
+    0.5282,
+    0.3399
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/real/photo_people_people_6.jpg",
+   "expected_label": "real",
+   "raw_fake_probability": 0.238164,
+   "predicted_label": "real",
+   "confidence": 0.761836,
+   "raw_output": [
+    0.975,
+    -0.1878
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/real/photo_people_people_73.jpg",
+   "expected_label": "real",
+   "raw_fake_probability": 0.077246,
+   "predicted_label": "real",
+   "confidence": 0.922754,
+   "raw_output": [
+    1.2597,
+    -1.2207
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/real/photo_people_screenshot_people_39.png",
+   "expected_label": "real",
+   "raw_fake_probability": null,
+   "predicted_label": "no_face",
+   "confidence": null,
+   "raw_output": "no_face"
+  },
+  {
+   "filename": "test_sets/acceptance/real/portrait_real_18.jpg",
+   "expected_label": "real",
+   "raw_fake_probability": 0.556811,
+   "predicted_label": "fake",
+   "confidence": 0.556811,
+   "raw_output": [
+    0.3516,
+    0.5798
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/real/portrait_real_258.jpg",
+   "expected_label": "real",
+   "raw_fake_probability": 0.480437,
+   "predicted_label": "real",
+   "confidence": 0.519563,
+   "raw_output": [
+    0.1166,
+    0.0383
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/real/portrait_real_312.jpg",
+   "expected_label": "real",
+   "raw_fake_probability": 0.972978,
+   "predicted_label": "fake",
+   "confidence": 0.972978,
+   "raw_output": [
+    -1.2228,
+    2.3609
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/real/portrait_real_328.jpg",
+   "expected_label": "real",
+   "raw_fake_probability": 0.794175,
+   "predicted_label": "fake",
+   "confidence": 0.794175,
+   "raw_output": [
+    -0.0481,
+    1.3022
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/real/portrait_real_562.jpg",
+   "expected_label": "real",
+   "raw_fake_probability": null,
+   "predicted_label": "no_face",
+   "confidence": null,
+   "raw_output": "no_face"
+  },
+  {
+   "filename": "test_sets/acceptance/real/portrait_real_83.jpg",
+   "expected_label": "real",
+   "raw_fake_probability": 0.112654,
+   "predicted_label": "real",
+   "confidence": 0.887346,
+   "raw_output": [
+    1.3098,
+    -0.7541
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/real/user_photo_Screenshot 2026-09-12 at 5.41.38\u202fPM.png",
+   "expected_label": "real",
+   "raw_fake_probability": 0.805604,
+   "predicted_label": "fake",
+   "confidence": 0.805604,
+   "raw_output": [
+    0.1221,
+    1.5438
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/real/video_frame_873_f2.jpg",
+   "expected_label": "real",
+   "raw_fake_probability": 0.63132,
+   "predicted_label": "fake",
+   "confidence": 0.63132,
+   "raw_output": [
+    -0.0975,
+    0.4404
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/real/video_frame_885_f1.jpg",
+   "expected_label": "real",
+   "raw_fake_probability": 0.462849,
+   "predicted_label": "real",
+   "confidence": 0.537151,
+   "raw_output": [
+    0.3739,
+    0.225
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/real/video_frame_891_f3.jpg",
+   "expected_label": "real",
+   "raw_fake_probability": 0.322358,
+   "predicted_label": "real",
+   "confidence": 0.677642,
+   "raw_output": [
+    0.763,
+    0.02
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/real/video_frame_975_f4.jpg",
+   "expected_label": "real",
+   "raw_fake_probability": 0.562059,
+   "predicted_label": "fake",
+   "confidence": 0.562059,
+   "raw_output": [
+    0.2958,
+    0.5453
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/faceshifter_034_590_f0.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.228546,
+   "predicted_label": "real",
+   "confidence": 0.771454,
+   "raw_output": [
+    1.3534,
+    0.1369
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/faceshifter_045_889_f1.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.935997,
+   "predicted_label": "fake",
+   "confidence": 0.935997,
+   "raw_output": [
+    -1.0092,
+    1.6735
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/faceshifter_063_041_f0.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.961302,
+   "predicted_label": "fake",
+   "confidence": 0.961302,
+   "raw_output": [
+    -1.7172,
+    1.4953
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/faceshifter_073_024_f2.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.922103,
+   "predicted_label": "fake",
+   "confidence": 0.922103,
+   "raw_output": [
+    -0.8656,
+    1.6057
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/faceshifter_074_825_f1.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.843971,
+   "predicted_label": "fake",
+   "confidence": 0.843971,
+   "raw_output": [
+    -0.7912,
+    0.8969
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/faceshifter_083_213_f1.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.854977,
+   "predicted_label": "fake",
+   "confidence": 0.854977,
+   "raw_output": [
+    -0.1127,
+    1.6615
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/faceshifter_085_124_f3.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.231975,
+   "predicted_label": "real",
+   "confidence": 0.768025,
+   "raw_output": [
+    0.8788,
+    -0.3184
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/faceshifter_091_116_f0.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.934809,
+   "predicted_label": "fake",
+   "confidence": 0.934809,
+   "raw_output": [
+    -1.1113,
+    1.5518
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/ffpp_Deepfakes_222_168_f1.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.665707,
+   "predicted_label": "fake",
+   "confidence": 0.665707,
+   "raw_output": [
+    -0.3422,
+    0.3466
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/ffpp_Deepfakes_226_491_f2.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.98935,
+   "predicted_label": "fake",
+   "confidence": 0.98935,
+   "raw_output": [
+    -2.1056,
+    2.4259
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/ffpp_Deepfakes_237_236_f4.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.963061,
+   "predicted_label": "fake",
+   "confidence": 0.963061,
+   "raw_output": [
+    -1.5969,
+    1.664
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/ffpp_Deepfakes_239_218_f2.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.996037,
+   "predicted_label": "fake",
+   "confidence": 0.996037,
+   "raw_output": [
+    -2.3418,
+    3.1851
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/ffpp_Face2Face_227_169_f4.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.300996,
+   "predicted_label": "real",
+   "confidence": 0.699004,
+   "raw_output": [
+    0.7739,
+    -0.0687
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/ffpp_Face2Face_233_995_f0.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.81658,
+   "predicted_label": "fake",
+   "confidence": 0.81658,
+   "raw_output": [
+    -0.5713,
+    0.9221
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/ffpp_Face2Face_236_237_f0.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.818064,
+   "predicted_label": "fake",
+   "confidence": 0.818064,
+   "raw_output": [
+    -0.7325,
+    0.7707
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/ffpp_Face2Face_237_236_f4.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.464982,
+   "predicted_label": "real",
+   "confidence": 0.535018,
+   "raw_output": [
+    -0.2027,
+    -0.343
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/ffpp_Face2Face_239_218_f3.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.655384,
+   "predicted_label": "fake",
+   "confidence": 0.655384,
+   "raw_output": [
+    0.1509,
+    0.7937
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/ffpp_FaceSwap_235_194_f2.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.936866,
+   "predicted_label": "fake",
+   "confidence": 0.936866,
+   "raw_output": [
+    -0.6901,
+    2.0072
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/ffpp_NeuralTextures_245_157_f1.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.324413,
+   "predicted_label": "real",
+   "confidence": 0.675587,
+   "raw_output": [
+    0.2241,
+    -0.5095
+   ]
+  },
+  {
+   "filename": "test_sets/acceptance/deepfake/ffpp_NeuralTextures_245_157_f4.jpg",
+   "expected_label": "fake",
+   "raw_fake_probability": 0.339438,
+   "predicted_label": "real",
+   "confidence": 0.660562,
+   "raw_output": [
+    0.4364,
+    -0.2294
+   ]
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+/Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[ImageModel] Loading face deepfake model ...
+[ImageModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/image_prediction_model/model_v3.pth
+[ImageModel] Input shape: [N, 3, 64, 64]
+[ImageModel] Output shape: [N, 1]
+[ImageModel] Calibration: positive_class=real, deepfake_threshold=0.25, imagenet_norm=True
+[VideoAsImage] Calibration: positive_class=real, deepfake_threshold=0.25, samples=8, decision_threshold=0.25, face_size=440
+[GeneralModel] Loading general AI-image model ...
+[GeneralModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/general_ai_image_model/model_general.pth
+[GeneralModel] Calibration: positive_class=real, deepfake_threshold=0.95
+[FaceSwapModel] Loading face-manipulation model ...
+[FaceSwapModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/faceswap_model/model_faceswap.pth
+[Calibration] thresholds from calibrate_decision.py on balanced validation data: ai_high=0.6817 ai_low=0.2323 deepfake_high=0.9172 deepfake_low=0.0005
+[SynthID] configured=False
+[HFViT] Loading buildborderless/CommunityForensics-DeepfakeDet-ViT ...
+[HFViT] Loaded successfully. Calibration: deepfake_threshold=0.719
+=== AI detector calibration (synthetic vs real, whole image) ===
+  [real_photos] 50/120
+  [real_photos] 100/120
+  [real_faces] 50/60
+  [ai_photos] 50/120
+  [ai_photos] 100/120
+  [gan_faces] 50/60
+
+=== Face-manipulation detector calibration (FF++ val) ===
+  [ff_real] 50/120
+  [ff_real] 100/120
+  [ff_fake] 50/120
+  [ff_fake] 100/120
+
+{
+  "source": "calibrate_decision.py on balanced validation data",
+  "thresholds": {
+    "ai_high": 0.6817,
+    "ai_low": 0.2323,
+    "deepfake_high": 0.9172,
+    "deepfake_low": null
+  },
+  "metrics": {
+    "ai_detector": {
+      "n_real": 180,
+      "n_fake": 180,
+      "ai_high": 0.6817,
+      "recall_at_high": 0.9944,
+      "false_real_rate_at_high": 0.0167,
+      "ai_low": 0.2323,
+      "ai_low_can_certify_authenticity": true,
+      "reals_below_low": 0.95,
+      "fakes_leaking_below_low": 0.0
+    },
+    "faceswap_detector": {
+      "n_real": 120,
+      "n_fake": 120,
+      "deepfake_high": 0.9172,
+      "recall_at_high": 0.2083,
+      "false_real_rate_at_high": 0.0167,
+      "deepfake_low": null,
+      "deepfake_low_can_certify_authenticity": false,
+      "reals_below_low": 0.1333,
+      "fakes_leaking_below_low": 0.0167
+    }
+  }
+}
+
+wrote /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/calibration.json

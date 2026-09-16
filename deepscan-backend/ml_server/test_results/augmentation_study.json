@@ -1,0 +1,65 @@
+{
+  "synthetic_ratio": 0.3,
+  "n_synthetic": 671,
+  "techniques": [
+    "blend_warp",
+    "freq_perturb",
+    "compression_artifact",
+    "color_perturb",
+    "autoencoder_swap"
+  ],
+  "conditions": {
+    "baseline": {
+      "val_auc": 0.9116,
+      "threshold": 0.5988,
+      "ffpp_test": {
+        "auc": 0.8585,
+        "recall": 0.6305,
+        "fpr": 0.0565
+      },
+      "faceshifter_unseen": {
+        "auc": 0.9249,
+        "recall": 0.66,
+        "fpr": 0.0565
+      },
+      "val_portraits_fpr": 0.0,
+      "leave_one_method_out_auc": {
+        "Deepfakes": 0.99,
+        "Face2Face": 0.8035,
+        "FaceSwap": 0.9193,
+        "NeuralTextures": 0.6422
+      },
+      "leave_one_method_out_mean_auc": 0.8387
+    },
+    "augmented": {
+      "val_auc": 0.9048,
+      "threshold": 0.6179,
+      "ffpp_test": {
+        "auc": 0.8354,
+        "recall": 0.5823,
+        "fpr": 0.0524
+      },
+      "faceshifter_unseen": {
+        "auc": 0.9176,
+        "recall": 0.645,
+        "fpr": 0.0524
+      },
+      "val_portraits_fpr": 0.0183,
+      "leave_one_method_out_auc": {
+        "Deepfakes": 0.9864,
+        "Face2Face": 0.7416,
+        "FaceSwap": 0.9492,
+        "NeuralTextures": 0.6816
+      },
+      "leave_one_method_out_mean_auc": 0.8397
+    }
+  },
+  "pretrained_effort_head": {
+    "ffpp_test_auc": 0.8614,
+    "faceshifter_unseen_auc": 0.828
+  },
+  "chosen_for_app": "baseline",
+  "face_low": 0.077,
+  "val_reals_below_low": 0.6147,
+  "val_precision_at_high": 0.8878
+}

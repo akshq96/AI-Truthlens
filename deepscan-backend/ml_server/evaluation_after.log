@@ -1,0 +1,89 @@
+/Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[ImageModel] Loading face deepfake model ...
+[ImageModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/image_prediction_model/model_v3.pth
+[ImageModel] Input shape: [N, 3, 64, 64]
+[ImageModel] Output shape: [N, 1]
+[ImageModel] Calibration: positive_class=real, deepfake_threshold=0.25, imagenet_norm=True
+[VideoAsImage] Calibration: positive_class=real, deepfake_threshold=0.25, samples=8, decision_threshold=0.25, face_size=440
+[GeneralModel] Loading general AI-image model ...
+[GeneralModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/general_ai_image_model/model_general.pth
+[GeneralModel] Calibration: positive_class=real, deepfake_threshold=0.95
+[FaceSwapModel] Loading face-manipulation model ...
+[FaceSwapModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/faceswap_model/model_faceswap.pth
+[Calibration] thresholds from calibrate_decision.py on balanced validation data: ai_high=0.6817 ai_low=0.2323 deepfake_high=0.9172 deepfake_low=None
+[SynthID] configured=False
+[HFViT] Loading buildborderless/CommunityForensics-DeepfakeDet-ViT ...
+[HFViT] Loaded successfully. Calibration: deepfake_threshold=0.719
+[camera_photos_no_face] n=67
+   40/67
+[camera_photos_faces] n=45
+   40/45
+[real_faces_dataset] n=45
+   40/45
+[ff_real_faces] n=45
+   40/45
+[ai_landscapes_objects] n=67
+   40/67
+[ai_portraits] n=45
+   40/45
+[gan_faces] n=45
+   40/45
+[face_swaps] n=45
+   40/45
+[unseen_manipulation_faceshifter] n=45
+   40/45
+[real_with_camera_exif] n=45
+/Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/.venv/lib/python3.9/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+   40/45
+[jpeg40_ai] n=22
+[jpeg40_real] n=22
+[resize50_ai] n=22
+[resize50_real] n=22
+[screenshot_ai] n=22
+[screenshot_real] n=22
+
+================ OVERALL ================
+{
+  "name": "OVERALL",
+  "n": 626,
+  "n_synthetic": 313,
+  "n_authentic": 313,
+  "accuracy_on_decided": 0.8706,
+  "precision": 0.979,
+  "recall_synthetic": 0.7444,
+  "f1": 0.8457,
+  "roc_auc": 0.9213,
+  "FALSE_REAL_RATE": 0.2396,
+  "false_synthetic_rate": 0.016,
+  "uncertain_rate": 0.0128,
+  "confusion": {
+    "tp_synth": 233,
+    "fp_synth": 5,
+    "tn_real": 305,
+    "fn_called_real": 75,
+    "uncertain": 8
+  }
+}
+
+================ PER CATEGORY ================
+category                              n  recall  FALSE-REAL  uncert    auc
+camera_photos_no_face                67   0.000       0.000   0.000    nan
+camera_photos_faces                  45   0.000       0.000   0.067    nan
+real_faces_dataset                   45   0.000       0.000   0.000    nan
+ff_real_faces                        45   0.000       0.000   0.000    nan
+ai_landscapes_objects                67   1.000       0.000   0.000    nan
+ai_portraits                         45   1.000       0.000   0.000    nan
+gan_faces                            45   0.978       0.000   0.022    nan
+face_swaps                           45   0.156       0.844   0.000    nan
+unseen_manipulation_faceshifter      45   0.222       0.756   0.022    nan
+real_with_camera_exif                45   0.000       0.000   0.000    nan
+jpeg40_ai                            22   0.773       0.136   0.091    nan
+jpeg40_real                          22   0.000       0.000   0.000    nan
+resize50_ai                          22   0.955       0.000   0.045    nan
+resize50_real                        22   0.000       0.000   0.000    nan
+screenshot_ai                        22   1.000       0.000   0.000    nan
+screenshot_real                      22   0.000       0.000   0.000    nan
+
+wrote evaluation_report_after.json

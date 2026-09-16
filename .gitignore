@@ -1,0 +1,42 @@
+node_modules/
+.env
+uploads/
+.claude
+
+# Docker local overrides
+docker-compose.override.yml
+
+# Local evaluation dataset
+Human Faces Dataset/
+video dataset/
+# Python virtual environments
+.venv/
+**/.venv/
+__pycache__/
+*.pyc
+
+# Datasets (large, and several licences forbid redistribution)
+deepscan-backend/ml_server/openfake_data/
+deepscan-backend/ml_server/external_data/
+deepscan-backend/ml_server/ff_splits/
+deepscan-backend/ml_server/modern_data/
+deepscan-backend/ml_server/calibration_data*/
+deepscan-backend/ml_server/realistic_data/
+deepscan-backend/ml_server/feature_cache/
+
+# Large pretrained checkpoints (download separately, see HOW_TO_RUN.md)
+deepscan-backend/ml_server/trained_models/effort/
+
+# Local logs and build output
+logs/
+presentation/node_modules/
+presentation/*.pdf
+.DS_Store
+deepscan-backend/ml_server/calibration_cifake/
+deepscan-backend/ml_server/calibration_pooled/
+deepscan-backend/ml_server/cifake_subsets/
+deepscan-backend/ml_server/faceswap_data/
+deepscan-backend/ml_server/ff_small/
+deepscan-backend/ml_server/smoke_test/
+# test images include FF++ frames (no redistribution) and personal photos
+deepscan-backend/ml_server/test_sets/

@@ -1,0 +1,13 @@
+Using device: mps
+Train samples: 4000 | Val samples: 800
+Held-out OOD test samples: 1000
+Epoch 1/6 | train_loss=0.5799 | val_acc=0.6175 val_bal_acc=0.6175 real_kept=0.7925 fake_kept=0.4425 (133.5s)
+Epoch 2/6 | train_loss=0.3457 | val_acc=0.6837 val_bal_acc=0.6837 real_kept=0.9175 fake_kept=0.4500 (164.9s)
+Epoch 3/6 | train_loss=0.2287 | val_acc=0.7612 val_bal_acc=0.7612 real_kept=0.8475 fake_kept=0.6750 (1045.0s)
+Epoch 4/6 | train_loss=0.1765 | val_acc=0.7612 val_bal_acc=0.7612 real_kept=0.8925 fake_kept=0.6300 (212.3s)
+Epoch 5/6 | train_loss=0.1392 | val_acc=0.7388 val_bal_acc=0.7388 real_kept=0.9525 fake_kept=0.5250 (625.8s)
+Early stopping at epoch 5 (no val improvement for 2 epochs)
+
+Best val balanced_accuracy: 0.7612
+Held-out OOD test metrics: {'accuracy': 0.616, 'balanced_accuracy': 0.616, 'real_kept_real_rate': 0.82, 'fake_kept_fake_rate': 0.412, 'n': 1000}
+Saved fine-tuned checkpoint to: trained_models/faceswap_model/model_faceswap.pth

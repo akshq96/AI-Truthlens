@@ -1,0 +1,42 @@
+# ═══════════════════════════════════════════════════════════════
+# DeepScan — Docker Compose Development Override
+# Adds: hot-reload, volume mounts, dev servers
+#
+# Usage:
+#   docker compose -f docker-compose.yml -f docker-compose.dev.yml up --build
+#
+# This overrides production settings with dev-friendly config:
+#   - Source code mounted as volumes (changes reload instantly)
+#   - Dev servers (nodemon for backend, CRA for frontend)
+#   - All dependencies installed (including devDependencies)
+# ═══════════════════════════════════════════════════════════════
+
+services:
+  # ── Backend (dev override) ───────────────────────────────────
+  backend:
+    build:
+      context: ./deepscan-backend
+      dockerfile: Dockerfile.dev
+    volumes:
+      # Mount source code for hot-reload
+      - ./deepscan-backend:/app
+      # Prevent host node_modules from overriding container's
+      - /app/node_modules
+    command: npx nodemon server.js
+
+  # ── Frontend (dev override) ──────────────────────────────────
+  frontend:
+    build:
+      context: ./deepscan-frontend
+      dockerfile: Dockerfile.dev
+    volumes:
+      # Mount source code for hot-reload
+      - ./deepscan-frontend:/app
+      # Prevent host node_modules from overriding container's
+      - /app/node_modules
+    ports:
+      - "3001:3000"
+    environment:
+      - REACT_APP_API_BASE_URL=http://localhost:5000
+      - CHOKIDAR_USEPOLLING=true
+    command: npm start

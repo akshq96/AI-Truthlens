@@ -1,0 +1,43 @@
+{
+  "threshold": 0.9634,
+  "val_auc": 0.8163,
+  "val_recall": 0.3771,
+  "val_fpr": 0.0298,
+  "val_precision": 0.8408,
+  "heldout_generators_recall": 0.4167,
+  "heldout_generators_n": 36,
+  "heldout_real_fpr": 0.0201,
+  "heldout_real_n": 523,
+  "acceptance_report_only": {
+    "real_fpr": 0.0,
+    "ai_generated_recall": 0.75,
+    "user_screenshots_recall": 0.9091,
+    "user_screenshots_scores": [
+      0.9996,
+      0.9972,
+      0.992,
+      0.9924,
+      0.9998,
+      0.9988,
+      0.646,
+      0.9968,
+      1.0,
+      1.0,
+      0.9827
+    ]
+  },
+  "counts": {
+    "fake_tr": 1396,
+    "real_tr": 1672,
+    "fake_val": 350,
+    "real_val": 419,
+    "real_val_aug": 419,
+    "fake_hold": 36,
+    "real_hold": 523,
+    "real_hold_aug": 523,
+    "acc_real": 21,
+    "acc_ai": 20,
+    "acc_user": 11
+  },
+  "validated": true
+}

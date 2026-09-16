@@ -1,0 +1,7 @@
+[
+  {"file": "train-00000-of-00004.parquet", "group": 0, "split": "train", "n_fake": 1200, "prefixes": ["DF40_CDF_FS"]},
+  {"file": "train-00000-of-00004.parquet", "group": 2, "split": "train", "n_fake": 800, "prefixes": ["DF40_FF_EFS"]},
+  {"file": "train-00002-of-00004.parquet", "group": 1, "split": "train", "n_real": 1500, "prefixes": ["DF40_CDF_FS"]},
+  {"file": "test-00000-of-00001.parquet", "group": 0, "split": "test", "n_fake": 400, "prefixes": ["DF40_CDF_FS"]},
+  {"file": "test-00000-of-00001.parquet", "group": 2, "split": "test", "n_real": 400, "prefixes": ["DF40_CDF_FS"]}
+]

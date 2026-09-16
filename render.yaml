@@ -1,0 +1,39 @@
+services:
+  # ── ML Inference Service ──────────────────────────────────────────
+  - type: web
+    name: deepscan-ml-service
+    env: docker
+    plan: starter # ML with PyTorch needs at least 1GB RAM (Starter)
+    region: ohio
+    dockerContext: ./deepscan-backend/ml_server
+    dockerfilePath: Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 7860
+      - key: DEEPSCAN_IMAGE_SIZE
+        value: 64
+      - key: DEEPSCAN_IMAGE_POSITIVE_CLASS
+        value: real
+
+  # ── Backend API ───────────────────────────────────────────────────
+  - type: web
+    name: deepscan-backend
+    env: node
+    plan: starter
+    region: ohio
+    rootDir: ./deepscan-backend
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: MONGODB_URI
+        sync: false # User must provide their own MongoDB Atlas URI
+      - key: FLASK_ML_URL
+        fromService:
+          type: web
+          name: deepscan-ml-service
+          property: host
+      - key: CORS_ORIGIN
+        value: "*" # Update this with your Vercel URL later

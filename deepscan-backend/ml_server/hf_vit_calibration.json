@@ -1,0 +1,58 @@
+[
+  {
+    "dataset": "face_dataset(calibration_data2)",
+    "n": 800,
+    "at_0.5": {
+      "threshold": 0.5,
+      "accuracy": 0.96125,
+      "balanced_accuracy": 0.96125,
+      "fp_rate_real_flagged_fake": 0.06499999999999995,
+      "fn_rate_fake_flagged_real": 0.012499999999999956,
+      "tp": 395,
+      "tn": 374,
+      "fp": 26,
+      "fn": 5
+    },
+    "best": {
+      "threshold": 0.719,
+      "accuracy": 0.96375,
+      "balanced_accuracy": 0.96375,
+      "fp_rate_real_flagged_fake": 0.04500000000000004,
+      "fn_rate_fake_flagged_real": 0.02749999999999997,
+      "tp": 389,
+      "tn": 382,
+      "fp": 18,
+      "fn": 11
+    },
+    "real_mean_prob": 0.07828485969595335,
+    "fake_mean_prob": 0.9737636068928986
+  },
+  {
+    "dataset": "cifake_general(finaltest)",
+    "n": 800,
+    "at_0.5": {
+      "threshold": 0.5,
+      "accuracy": 0.6,
+      "balanced_accuracy": 0.6,
+      "fp_rate_real_flagged_fake": 0.12,
+      "fn_rate_fake_flagged_real": 0.6799999999999999,
+      "tp": 128,
+      "tn": 352,
+      "fp": 48,
+      "fn": 272
+    },
+    "best": {
+      "threshold": 0.23500000000000001,
+      "accuracy": 0.61625,
+      "balanced_accuracy": 0.61625,
+      "fp_rate_real_flagged_fake": 0.22499999999999998,
+      "fn_rate_fake_flagged_real": 0.5425,
+      "tp": 183,
+      "tn": 310,
+      "fp": 90,
+      "fn": 217
+    },
+    "real_mean_prob": 0.16302938791724955,
+    "fake_mean_prob": 0.34394038961026124
+  }
+]

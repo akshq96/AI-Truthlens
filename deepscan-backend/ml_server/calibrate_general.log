@@ -1,0 +1,33 @@
+[ImageModel] Loading face deepfake model ...
+[ImageModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/image_prediction_model/model_v3.pth
+[ImageModel] Input shape: [N, 3, 64, 64]
+[ImageModel] Output shape: [N, 1]
+[ImageModel] Calibration: positive_class=real, deepfake_threshold=0.25, imagenet_norm=True
+[VideoAsImage] Calibration: positive_class=real, deepfake_threshold=0.25, samples=8, decision_threshold=0.25, face_size=224
+[GeneralModel] Loading general AI-image model ...
+[GeneralModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/general_ai_image_model/model_general.pth
+[GeneralModel] Calibration: positive_class=real, deepfake_threshold=0.5
+n= 2400
+CURRENT: {
+  "threshold": 0.5,
+  "accuracy": 0.9154166666666667,
+  "balanced_accuracy": 0.9154166666666667,
+  "fp_rate_real_flagged_fake": 0.16333333333333333,
+  "fn_rate_fake_flagged_real": 0.005833333333333357,
+  "tp": 1193,
+  "tn": 1004,
+  "fp": 196,
+  "fn": 7
+}
+BEST: {
+  "threshold": 0.9520000000000001,
+  "accuracy": 0.9495833333333333,
+  "balanced_accuracy": 0.9495833333333333,
+  "fp_rate_real_flagged_fake": 0.04500000000000004,
+  "fn_rate_fake_flagged_real": 0.05583333333333329,
+  "tp": 1133,
+  "tn": 1146,
+  "fp": 54,
+  "fn": 67
+}
+real_mean_prob= 0.16667332053136744 fake_mean_prob= 0.9826079317581455

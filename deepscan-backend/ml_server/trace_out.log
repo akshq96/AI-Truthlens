@@ -1,0 +1,154 @@
+/Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[ImageModel] Loading face deepfake model ...
+[ImageModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/image_prediction_model/model_v3.pth
+[ImageModel] Input shape: [N, 3, 64, 64]
+[ImageModel] Output shape: [N, 1]
+[ImageModel] Calibration: positive_class=real, deepfake_threshold=0.25, imagenet_norm=True
+[VideoAsImage] Calibration: positive_class=real, deepfake_threshold=0.25, samples=8, decision_threshold=0.25, face_size=440
+[GeneralModel] Loading general AI-image model ...
+[GeneralModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/general_ai_image_model/model_general.pth
+[GeneralModel] Calibration: positive_class=real, deepfake_threshold=0.95
+[FaceSwapModel] Loading face-manipulation model ...
+[FaceSwapModel] Loaded successfully from: /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/faceswap_model/model_faceswap.pth
+[Calibration] thresholds from calibrate_decision.py on balanced validation data: ai_high=0.6817 ai_low=0.2323 deepfake_high=0.1562 deepfake_low=None
+[SynthID] configured=False
+[HFViT] Loading buildborderless/CommunityForensics-DeepfakeDet-ViT ...
+[HFViT] Loaded successfully. Calibration: deepfake_threshold=0.719
+====================================================================================================
+LOADED MODELS
+  AI detector      : buildborderless/CommunityForensics-DeepfakeDet-ViT
+  face-manip ckpt  : /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/faceswap_model/model_faceswap.pth
+  legacy face ckpt : /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/image_prediction_model/model_v3.pth
+  legacy general   : /Users/akshitraj/Downloads/Ai_deepfake-main/deepscan-backend/ml_server/trained_models/general_ai_image_model/model_general.pth
+  thresholds       : {"ai_high": 0.6817, "ai_low": 0.2323, "deepfake_high": 0.1562, "deepfake_low": null}
+====================================================================================================
+
+######## REAL  (n=5) ########
+
+  people_0.jpg   expected=REAL
+    face_detected=True crop=[671, 671, 3]
+    AI  raw_logits=[-6.382896423339844]  -> P(synthetic)=0.001687368261627853
+    DF  raw_logits=[3.198962926864624]  -> P(deepfake)=0.03920476835049036
+    meta consistency=0.06 (weak)  c2pa=not_found  synthid=unavailable
+    => REAL  conf=0.9608
+
+  people_1.jpg   expected=REAL
+    face_detected=True crop=[574, 574, 3]
+    AI  raw_logits=[-0.9687686562538147]  -> P(synthetic)=0.27512601017951965
+    DF  raw_logits=[3.6465959548950195]  -> P(deepfake)=0.025416888303478324
+    meta consistency=0.06 (weak)  c2pa=not_found  synthid=unavailable
+    => UNCERTAIN  conf=0.5
+
+  people_10.jpg   expected=REAL
+    face_detected=True crop=[161, 161, 3]
+    AI  raw_logits=[-5.296355247497559]  -> P(synthetic)=0.004984847269952297
+    DF  raw_logits=[1.6373353004455566]  -> P(deepfake)=0.16282797489065193
+    meta consistency=0.06 (weak)  c2pa=not_found  synthid=unavailable
+    => DEEPFAKE  conf=0.7273
+
+  people_100.jpg   expected=REAL
+    face_detected=True crop=[84, 84, 3]
+    AI  raw_logits=[-11.389318466186523]  -> P(synthetic)=1.1315582014503889e-05
+    DF  raw_logits=[0.9296854734420776]  -> P(deepfake)=0.07031452655792236
+    meta consistency=0.06 (weak)  c2pa=not_found  synthid=unavailable
+    => REAL  conf=0.9297
+
+  people_101.jpg   expected=REAL
+    face_detected=False crop=None
+    AI  raw_logits=[-7.144046783447266]  -> P(synthetic)=0.0007889276021160185
+    DF  raw_logits=None  -> P(deepfake)=None  [skipped: no face]
+    meta consistency=0.06 (weak)  c2pa=not_found  synthid=unavailable
+    => REAL  conf=0.9992
+
+######## DEEPFAKE  (n=5) ########
+
+  Deepfakes_212_179_f3.jpg   expected=DEEPFAKE
+    face_detected=True crop=[198, 198, 3]
+    AI  raw_logits=[-4.473929405212402]  -> P(synthetic)=0.011273873038589954
+    DF  raw_logits=[0.03800215572118759]  -> P(deepfake)=0.9619978442788124
+    meta consistency=0.0 (none)  c2pa=not_found  synthid=unavailable
+    => DEEPFAKE  conf=0.962
+
+  Deepfakes_212_179_f4.jpg   expected=DEEPFAKE
+    face_detected=True crop=[193, 193, 3]
+    AI  raw_logits=[-5.089821815490723]  -> P(synthetic)=0.006121414713561535
+    DF  raw_logits=[1.8336907625198364]  -> P(deepfake)=0.13779918510166078
+    meta consistency=0.0 (none)  c2pa=not_found  synthid=unavailable
+    => REAL  conf=0.8622
+
+  Deepfakes_213_083_f0.jpg   expected=DEEPFAKE
+    face_detected=True crop=[208, 215, 3]
+    AI  raw_logits=[-5.600346565246582]  -> P(synthetic)=0.0036829679738730192
+    DF  raw_logits=[3.4677395820617676]  -> P(deepfake)=0.030244208054092336
+    meta consistency=0.0 (none)  c2pa=not_found  synthid=unavailable
+    => REAL  conf=0.9698
+
+  Deepfakes_213_083_f1.jpg   expected=DEEPFAKE
+    face_detected=True crop=[207, 209, 3]
+    AI  raw_logits=[-4.780865669250488]  -> P(synthetic)=0.008318948559463024
+    DF  raw_logits=[2.5201375484466553]  -> P(deepfake)=0.07445846554216684
+    meta consistency=0.0 (none)  c2pa=not_found  synthid=unavailable
+    => REAL  conf=0.9255
+
+  Deepfakes_213_083_f2.jpg   expected=DEEPFAKE
+    face_detected=True crop=[209, 213, 3]
+    AI  raw_logits=[-4.657409191131592]  -> P(synthetic)=0.00940178707242012
+    DF  raw_logits=[0.08050965517759323]  -> P(deepfake)=0.9194903448224068
+    meta consistency=0.0 (none)  c2pa=not_found  synthid=unavailable
+    => DEEPFAKE  conf=0.9195
+
+######## AI-GENERATED  (n=5) ########
+
+  image-10.png   expected=AI-GENERATED
+    face_detected=True crop=[145, 145, 3]
+    AI  raw_logits=[13.113744735717773]  -> P(synthetic)=0.9999979734420776
+    DF  raw_logits=[2.23333477973938]  -> P(deepfake)=0.0967966985987958
+    meta consistency=0.0 (none)  c2pa=not_found  synthid=unavailable
+    => AI-GENERATED  conf=0.99
+
+  image-11.png   expected=AI-GENERATED
+    face_detected=False crop=None
+    AI  raw_logits=[13.092757225036621]  -> P(synthetic)=0.9999979734420776
+    DF  raw_logits=None  -> P(deepfake)=None  [skipped: no face]
+    meta consistency=0.0 (none)  c2pa=not_found  synthid=unavailable
+    => AI-GENERATED  conf=0.99
+
+  image-12.png   expected=AI-GENERATED
+    face_detected=True crop=[203, 203, 3]
+    AI  raw_logits=[13.451833724975586]  -> P(synthetic)=0.9999985694885254
+    DF  raw_logits=[-0.23832347989082336]  -> P(deepfake)=0.5593004559725612
+    meta consistency=0.0 (none)  c2pa=not_found  synthid=unavailable
+    => AI-GENERATED  conf=0.99
+
+  image-13.png   expected=AI-GENERATED
+    face_detected=True crop=[281, 281, 3]
+    AI  raw_logits=[5.864263534545898]  -> P(synthetic)=0.9971689581871033
+    DF  raw_logits=[3.1657845973968506]  -> P(deepfake)=0.040473806694230285
+    meta consistency=0.0 (none)  c2pa=not_found  synthid=unavailable
+    => AI-GENERATED  conf=0.99
+
+  image-14.png   expected=AI-GENERATED
+    face_detected=True crop=[68, 68, 3]
+    AI  raw_logits=[14.243295669555664]  -> P(synthetic)=0.9999994039535522
+    DF  raw_logits=[0.3740685284137726]  -> P(deepfake)=0.6259314715862274
+    meta consistency=0.0 (none)  c2pa=not_found  synthid=unavailable
+    => AI-GENERATED  conf=0.99
+
+====================================================================================================
+LABEL POLARITY CHECK (mean raw logit per class)
+====================================================================================================
+
+AI detector (ViT):
+   REAL           n= 5  mean_logit=  -6.236  mean_sigmoid=0.0565
+   DEEPFAKE       n= 5  mean_logit=  -4.920  mean_sigmoid=0.0078
+   AI-GENERATED   n= 5  mean_logit= +11.953  mean_sigmoid=0.9994
+   Expectation: FAKE classes should sit on the opposite side of REAL.
+
+face-manip (Xception):
+   REAL           n= 4  mean_logit=  +2.353  mean_sigmoid=0.8724
+   DEEPFAKE       n= 5  mean_logit=  +1.588  mean_sigmoid=0.7574
+   AI-GENERATED   n= 4  mean_logit=  +1.384  mean_sigmoid=0.7240
+   Expectation: FAKE classes should sit on the opposite side of REAL.
+
+wrote trace_report.json
