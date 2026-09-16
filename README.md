@@ -143,7 +143,7 @@ deepscan-frontend/src/
 
 ---
 
-| 👤 | **Harshita Nagpal** | Frontend & Documentation |
+ **Harshita Nagpal** | Frontend & Documentation |
 | 👤 | **Naman Singh** | Backend & Testing |
 
 **Supervisor:** Mr. Abhishek Singh · **Submitted To:** Mr. Sanjay Madaan
