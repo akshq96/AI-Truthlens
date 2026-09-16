@@ -144,7 +144,7 @@ deepscan-frontend/src/
 ---
 
 
-**Supervisor:** Mr. Abhishek Singh · **Submitted To:** Mr. Sanjay Madaan
+ Mr. Abhishek Singh · **Submitted To:** Mr. Sanjay Madaan
 
 ---
 
